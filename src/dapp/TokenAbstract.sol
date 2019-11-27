@@ -1,7 +1,7 @@
 pragma solidity ^0.5.12;
 
 // https://github.com/dapphub/ds-token/blob/master/src/token.sol
-contract GemAbstract {
+contract TokenAbstract {
     bytes32 public name;
     bytes32 public symbol;
     uint256 public decimals;
