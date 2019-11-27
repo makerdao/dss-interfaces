@@ -11,3 +11,4 @@ import { FlopAbstract } from "./dss/FlopAbstract.sol";
 import { FlipAbstract } from "./dss/FlipAbstract.sol";
 import { VowAbstract } from "./dss/VowAbstract.sol";
 import { CatAbstract } from "./dss/CatAbstract.sol";
+import { EndAbstract } from "./dss/EndAbstract.sol";
