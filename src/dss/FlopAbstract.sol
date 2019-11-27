@@ -1,7 +1,7 @@
 pragma solidity ^0.5.12;
 
 import { VatAbstract } from "./VatAbstract.sol";
-import { GemAbstract } from "./GemAbstract.sol";
+import { GemAbstract } from "../dapp/GemAbstract.sol";
 
 // https://github.com/makerdao/dss/blob/master/src/flop.sol
 contract FlopAbstract {
