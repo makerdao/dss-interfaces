@@ -23,7 +23,7 @@ import "dss-interfaces/dss/VatAbstract.sol";
 
 
 ```
-import { VatAbstract } from "./interfaces.sol";
+import { VatAbstract } from "./Interfaces.sol";
 
 pragma solidity ^0.5.12;
 
