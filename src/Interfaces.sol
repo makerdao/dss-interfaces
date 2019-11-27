@@ -4,6 +4,7 @@ import { GemAbstract } from "./dapp/GemAbstract.sol";
 import { PipAbstract } from "./dapp/PipAbstract.sol";
 import { VatAbstract } from "./dss/VatAbstract.sol";
 import { PotAbstract } from "./dss/PotAbstract.sol";
+import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { DaiAbstract } from "./dss/DaiAbstract.sol";
 import { FlapAbstract } from "./dss/FlapAbstract.sol";
 import { FlopAbstract } from "./dss/FlopAbstract.sol";
