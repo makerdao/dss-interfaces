@@ -15,3 +15,4 @@ import { CatAbstract } from "./dss/CatAbstract.sol";
 import { EndAbstract } from "./dss/EndAbstract.sol";
 import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
 import { ETHJoinAbstract } from "./dss/ETHJoinAbstract.sol";
+import { DaiJoinAbstract } from "./dss/DaiJoinAbstract.sol";
