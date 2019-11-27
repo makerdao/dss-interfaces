@@ -1,7 +1,7 @@
 pragma solidity ^0.5.12;
 
 import { VatAbstract } from "./VatAbstract.sol";
-import { GemAbstract } from "../dapp/GemAbstract.sol";
+import { TokenAbstract } from "../dapp/TokenAbstract.sol";
 
 // https://github.com/makerdao/dss/blob/master/src/flop.sol
 contract FlopAbstract {
@@ -17,7 +17,7 @@ contract FlopAbstract {
     }
     mapping (uint => Bid) public bids;
     VatAbstract public vat;
-    GemAbstract public gem;
+    TokenAbstract public gem;
     uint256 public ONE;
     uint256 public beg;  // 5% minimum bid increase
     uint256 public pad;  // 50% lot increase for tick

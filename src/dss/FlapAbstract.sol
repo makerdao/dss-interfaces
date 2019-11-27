@@ -1,7 +1,7 @@
 pragma solidity ^0.5.12;
 
 import { VatAbstract } from "./VatAbstract.sol";
-import { GemAbstract } from "../dapp/GemAbstract.sol";
+import { TokenAbstract } from "../dapp/TokenAbstract.sol";
 
 // https://github.com/makerdao/dss/blob/master/src/flap.sol
 contract FlapAbstract {
@@ -17,7 +17,7 @@ contract FlapAbstract {
     }
     mapping (uint256 => Bid) public bids;
     VatAbstract public vat;
-    GemAbstract public gem;
+    TokenAbstract public gem;
     uint256 public ONE;
     uint256 public beg;
     uint48 public ttl;
