@@ -14,3 +14,4 @@ import { VowAbstract } from "./dss/VowAbstract.sol";
 import { CatAbstract } from "./dss/CatAbstract.sol";
 import { EndAbstract } from "./dss/EndAbstract.sol";
 import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
+import { ETHJoinAbstract } from "./dss/ETHJoinAbstract.sol";
