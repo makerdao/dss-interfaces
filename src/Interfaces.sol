@@ -5,3 +5,4 @@ import { PotAbstract } from "./dss/PotAbstract.sol";
 import { DaiAbstract } from "./dss/DaiAbstract.sol";
 import { GemAbstract } from "./dss/GemAbstract.sol";
 import { FlapAbstract } from "./dss/FlapAbstract.sol";
+import { FlopAbstract } from "./dss/FlopAbstract.sol";
