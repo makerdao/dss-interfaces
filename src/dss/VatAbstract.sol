@@ -2,7 +2,8 @@ pragma solidity ^0.5.12;
 
 // https://github.com/makerdao/dss/blob/master/src/vat.sol
 contract VatAbstract {
-    mapping (address => uint) public wards;
+    // mapping (address => uint) public wards;
+    function wards(address) public returns (uint256);
     function rely(address) external;
     function deny(address) external;
     struct Ilk {
@@ -16,17 +17,28 @@ contract VatAbstract {
         uint256 ink;   // Locked Collateral  [wad]
         uint256 art;   // Normalised Debt    [wad]
     }
-    mapping (address => mapping (address => uint256)) public can;
+    // mapping (address => mapping (address => uint256)) public can;
+    function can(address, address) public returns (uint256);
     function hope(address) external;
+    function nope(address) external;
+    // mapping (bytes32 => Ilk) public ilks;
     function ilks(bytes32) external view returns (uint256, uint256, uint256, uint256, uint256);
-    mapping (bytes32 => mapping (address => Urn)) public urns;
-    mapping (bytes32 => mapping (address => uint256)) public gem;  // [wad]
-    mapping (address => uint256) public dai;  // [rad]
-    mapping (address => uint256) public sin;  // [rad]
-    uint256 public debt;  // Total Dai Issued    [rad]
-    uint256 public vice;  // Total Unbacked Dai  [rad]
-    uint256 public Line;  // Total Debt Ceiling  [rad]
-    uint256 public live;  // Access Flag
+    // mapping (bytes32 => mapping (address => Urn)) public urns;
+    function urns(bytes32, address) public returns (uint256, uint256);
+    // mapping (bytes32 => mapping (address => uint256)) public gem;  // [wad]
+    function gem(bytes32, address) public returns (uint256);
+    // mapping (address => uint256) public dai;  // [rad]
+    function dai(address) public returns (uint256);
+    // mapping (address => uint256) public sin;  // [rad]
+    function sin(address) public returns (uint256);
+    // uint256 public debt;  // Total Dai Issued    [rad]
+    function debt() public returns (uint256);
+    // uint256 public vice;  // Total Unbacked Dai  [rad]
+    function vice() public returns (uint256);
+    // uint256 public Line;  // Total Debt Ceiling  [rad]
+    function Line() public returns (uint256);
+    // uint256 public live;  // Access Flag
+    function live() public returns (uint256);
     function init(bytes32) external;
     function file(bytes32, uint256) external;
     function file(bytes32, bytes32, uint256) external;

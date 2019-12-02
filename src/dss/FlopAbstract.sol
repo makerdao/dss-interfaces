@@ -5,7 +5,8 @@ import { TokenAbstract } from "../dapp/TokenAbstract.sol";
 
 // https://github.com/makerdao/dss/blob/master/src/flop.sol
 contract FlopAbstract {
-    mapping (address => uint256) public wards;
+    // mapping (address => uint256) public wards;
+    function wards(address) public returns (uint256);
     function rely(address) external;
     function deny(address) external;
     struct Bid {
@@ -15,17 +16,28 @@ contract FlopAbstract {
         uint48  tic;  // expiry time
         uint48  end;
     }
-    mapping (uint => Bid) public bids;
-    VatAbstract public vat;
-    TokenAbstract public gem;
-    uint256 public ONE;
-    uint256 public beg;  // 5% minimum bid increase
-    uint256 public pad;  // 50% lot increase for tick
-    uint48 public ttl;  // 3 hours bid lifetime
-    uint48 public tau;   // 2 days total auction length
-    uint256 public kicks;
-    uint256 public live;
-    address public vow;
+    // mapping (uint => Bid) public bids;
+    function bids(uint256) public returns (uint256, uint256, address, uint48, uint48);
+    //VatAbstract public vat;
+    function vat() public returns (VatAbstract);
+    // TokenAbstract public gem;
+    function gem() public returns (TokenAbstract);
+    // uint256 public ONE;
+    function ONE() public returns (uint256);
+    // uint256 public beg;  // 5% minimum bid increase
+    function beg() public returns (uint256);
+    // uint256 public pad;  // 50% lot increase for tick
+    function pad() public returns (uint256);
+    // uint48 public ttl;  // 3 hours bid lifetime
+    function ttl() public returns (uint48);
+    // uint48 public tau;   // 2 days total auction length
+    function tau() public returns (uint48);
+    // uint256 public kicks;
+    function kicks() public returns (uint256);
+    // uint256 public live;
+    function live() public returns (uint256);
+    // address public vow;
+    function vow() public returns (address);
     event Kick(uint256, uint256, uint256, address);
     function file(bytes32, uint256) external;
     function kick(address, uint256, uint256) external returns (uint256);
