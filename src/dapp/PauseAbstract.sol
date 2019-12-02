@@ -1,12 +1,12 @@
 pragma solidity ^0.5.12;
 
-import "./PauseProxyAbstract.sol";
+import { PauseProxyAbstract } from "./PauseProxyAbstract.sol";
+import { DSAuthorityAbstract } from "./AuthorityAbstract.sol";
 
 // https://github.com/dapphub/ds-pause
 contract PauseAbstract {
     function setOwner(address) public;
-    // TODO: need DSAuthority here
-    // function setAuthority(DSAuthority authority_) public;
+    function setAuthority(DSAuthority) public;
     function setDelay(uint256) public;
     // mapping (bytes32 => bool) public plans;
     function plans(bytes32) public returns (bool);
