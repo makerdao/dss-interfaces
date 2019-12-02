@@ -20,6 +20,8 @@ import { FlapAbstract } from "./dss/FlapAbstract.sol";
 import { FlipAbstract } from "./dss/FlipAbstract.sol";
 import { FlopAbstract } from "./dss/FlopAbstract.sol";
 import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
+import { MKRAbstract } from "./dss/MKRAbstract.sol";
+import { PipAbstract } from "./dss/PipAbstract.sol";
 import { PotAbstract } from "./dss/PotAbstract.sol";
 import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { VatAbstract } from "./dss/VatAbstract.sol";
