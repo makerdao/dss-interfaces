@@ -1,7 +1,7 @@
 pragma solidity ^0.5.12;
 
 import { VatAbstract } from "./VatAbstract.sol";
-import { TokenAbstract } from "../dapp/TokenAbstract.sol";
+import { DSTokenAbstract } from "../dapp/DSTokenAbstract.sol";
 
 // https://github.com/makerdao/dss-deploy/blob/master/src/join.sol
 contract AuthGemJoinAbstract {
@@ -10,7 +10,7 @@ contract AuthGemJoinAbstract {
     // bytes32 public ilk;
     function ilk() public returns (bytes32);
     // TokenAbstract public gem;
-    function gem() public returns (TokenAbstract);
+    function gem() public returns (DSTokenAbstract);
     // uint256 public dec;
     function dec() public returns (uint256);
     // uint256 public live;  // Access Flag

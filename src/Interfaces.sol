@@ -2,13 +2,13 @@ pragma solidity ^0.5.12;
 
 import { GemAbstract } from "./ERC/GemAbstract.sol";
 
-import { DSAuthorityAbstract, DSAuthEventsAbstract, DSAuthAbstract } from "./dapp/AuthorityAbstract.sol";
-import { DSChiefAbstract } from "./dapp/ChiefAbstract.sol";
-import { PauseAbstract } from "./dapp/PauseAbstract.sol";
-import { PauseProxyAbstract } from "./dapp/PauseProxyAbstract.sol";
-import { PipAbstract } from "./dapp/PipAbstract.sol";
-import { RolesAbstract } from "./dapp/RolesAbstract.sol";
-import { TokenAbstract } from "./dapp/TokenAbstract.sol";
+import { DSAuthorityAbstract, DSAuthEventsAbstract, DSAuthAbstract } from "./dapp/DSAuthorityAbstract.sol";
+import { DSChiefAbstract } from "./dapp/DSChiefAbstract.sol";
+import { DSPauseAbstract } from "./dapp/DSPauseAbstract.sol";
+import { DSPauseProxyAbstract } from "./dapp/DSPauseProxyAbstract.sol";
+import { DSValueAbstract } from "./dapp/DSValueAbstract.sol";
+import { DSRolesAbstract } from "./dapp/DSRolesAbstract.sol";
+import { DSTokenAbstract } from "./dapp/DSTokenAbstract.sol";
 
 import { AuthGemJoinAbstract } from "./dss/AuthGemJoinAbstract.sol";
 import { CatAbstract } from "./dss/CatAbstract.sol";

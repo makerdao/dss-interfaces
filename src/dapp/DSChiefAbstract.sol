@@ -1,8 +1,8 @@
 pragma solidity ^0.5.12;
 
-import { TokenAbstract } from "./TokenAbstract.sol";
-import { RolesAbstract } from "./RolesAbstract.sol";
-import { DSAuthorityAbstract } from "./AuthorityAbstract.sol";
+import { DSTokenAbstract } from "./DSTokenAbstract.sol";
+import { DSRolesAbstract } from "./DSRolesAbstract.sol";
+import { DSAuthorityAbstract } from "./DSAuthorityAbstract.sol";
 
 // https://github.com/dapphub/ds-chief
 contract DSChiefApprovals {
@@ -15,9 +15,9 @@ contract DSChiefApprovals {
     // mapping(address=>uint256) public deposits;
     function deposits(address) public returns (address);
     // DSToken public GOV; // voting token that gets locked up
-    function GOV() public returns (TokenAbstract);
+    function GOV() public returns (DSTokenAbstract);
     // DSToken public IOU; // non-voting representation of a token, for e.g. secondary voting mechanisms
-    function IOU() public returns (TokenAbstract);
+    function IOU() public returns (DSTokenAbstract);
     // address public hat; // the chieftain's hat
     function hat() public returns (address);
     // uint256 public MAX_YAYS;
@@ -31,7 +31,7 @@ contract DSChiefApprovals {
     function lift(address) public;
 }
 
-contract DSChiefAbstract is RolesAbstract, DSChiefApprovals {
+contract DSChiefAbstract is DSRolesAbstract, DSChiefApprovals {
     function setOwner(address) public;
     function setAuthority(DSAuthorityAbstract) public;
     function isUserRoot(address) public view returns (bool);
@@ -39,5 +39,5 @@ contract DSChiefAbstract is RolesAbstract, DSChiefApprovals {
 }
 
 contract DSChiefFabAbstract {
-    function newChief(TokenAbstract, uint256) public returns (DSChiefAbstract);
+    function newChief(DSTokenAbstract, uint256) public returns (DSChiefAbstract);
 }
