@@ -10,11 +10,11 @@ contract DSAuthEventsAbstract {
     event LogSetOwner (address indexed);
 }
 
-contract DSAuthAbstract is DSAuthEvents {
+contract DSAuthAbstract is DSAuthEventsAbstract {
     // DSAuthority  public  authority;
     function authority() public returns (DSAuthorityAbstract);
     // address      public  owner;
     function owner() public returns (address);
     function setOwner(address) public;
-    function setAuthority(DSAuthority) public;
+    function setAuthority(DSAuthorityAbstract) public;
 }
