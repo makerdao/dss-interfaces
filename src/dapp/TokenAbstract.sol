@@ -1,10 +1,14 @@
 pragma solidity ^0.5.12;
 
+// MKR Token adheres to the DSToken interface
 // https://github.com/dapphub/ds-token/blob/master/src/token.sol
 contract TokenAbstract {
-    bytes32 public name;
-    bytes32 public symbol;
-    uint256 public decimals;
+    // bytes32 public name;
+    function name() public returns (bytes32);
+    // bytes32 public symbol;
+    function symbol() public returns (bytes32);
+    // uint256 public decimals;
+    function decimals() public returns (uint256);
     function totalSupply() external view returns (uint256);
     function balanceOf(address) external view returns (uint256);
     function transfer(address, uint256) external returns (bool);
