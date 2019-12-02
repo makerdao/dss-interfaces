@@ -1,26 +1,39 @@
 pragma solidity ^0.5.12;
 
-import { FlopAbstract } from "./dss/FlopAbstract.sol";
-import { FlapAbstract } from "./dss/FlapAbstract.sol";
-import { VatAbstract } from "./dss/VatAbstract.sol";
+import { FlopAbstract } from "./FlopAbstract.sol";
+import { FlapAbstract } from "./FlapAbstract.sol";
+import { VatAbstract } from "./VatAbstract.sol";
 
 // https://github.com/makerdao/dss/blob/master/src/vow.sol
-contract VowLike {
-    mapping (address => uint) public wards;
+contract VowAbstract {
+    // mapping (address => uint) public wards;
+    function wards(address) public returns (uint256);
     function rely(address usr) external;
     function deny(address usr) external;
-    VatAbstract public vat;
-    FlapAbstract public flapper;
-    FlopAbstract public flopper;
-    mapping (uint256 => uint256) public sin; // debt queue
-    uint256 public Sin;   // queued debt          [rad]
-    uint256 public Ash;
-    uint256 public wait;  // flop delay
-    uint256 public dump;  // flop initial lot size  [wad]
-    uint256 public sump;  // flop fixed bid size    [rad]
-    uint256 public bump;  // flap fixed lot size    [rad]
-    uint256 public hump;  // surplus buffer       [rad]
-    uint256 public live;
+    // VatAbstract public vat;
+    function vat() public returns (VatAbstract);
+    // FlapAbstract public flapper;
+    function flapper() public returns (FlapAbstract);
+    // FlopAbstract public flopper;
+    function flopper() public returns (FlopAbstract);
+    // mapping (uint256 => uint256) public sin; // debt queue
+    function sin(uint256) public returns (uint256);
+    // uint256 public Sin;   // queued debt          [rad]
+    function Sin() public returns (uint256);
+    // uint256 public Ash;
+    function Ash() public returns (uint256);
+    // uint256 public wait;  // flop delay
+    function wait() public returns (uint256);
+    // uint256 public dump;  // flop initial lot size  [wad]
+    function dump() public returns (uint256);
+    // uint256 public sump;  // flop fixed bid size    [rad]
+    function sump() public returns (uint256);
+    // uint256 public bump;  // flap fixed lot size    [rad]
+    function bump() public returns (uint256);
+    // uint256 public hump;  // surplus buffer       [rad]
+    function hump() public returns (uint256);
+    // uint256 public live;
+    function live() public returns (uint256);
     function file(bytes32, uint256) external;
     function file(bytes32, address) external;
     function fess(uint256) external;

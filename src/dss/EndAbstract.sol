@@ -8,26 +8,44 @@ import { SpotAbstract } from "./SpotAbstract.sol";
 
 // https://github.com/makerdao/dss/blob/master/src/end.sol
 contract EndAbstract {
-    mapping (address => uint) public wards;
-    function rely(address guy) external;
-    function deny(address guy) external;
-    VatAbstract public vat;
-    CatAbstract public cat;
-    VowAbstract public vow;
-    PotAbstract public pot;
-    SpotAbstract public spot;
-    uint256  public live;  // cage flag
-    uint256  public when;  // time of cage
-    uint256  public wait;  // processing cooldown length
-    uint256  public debt;  // total outstanding dai following processing [rad]
-    mapping (bytes32 => uint256) public tag;  // cage price           [ray]
-    mapping (bytes32 => uint256) public gap;  // collateral shortfall [wad]
-    mapping (bytes32 => uint256) public Art;  // total debt per ilk   [wad]
-    mapping (bytes32 => uint256) public fix;  // final cash price     [ray]
-    mapping (address => uint256) public bag;  // [wad]
-    mapping (bytes32 => mapping (address => uint256)) public out;  // [wad]
-    uint256 public WAD;
-    uint256 public RAY;
+    // mapping (address => uint) public wards;
+    function wards(address) public returns (uint256);
+    function rely(address) external;
+    function deny(address) external;
+    // VatAbstract public vat;
+    function vat() public returns (VatAbstract);
+    // CatAbstract public cat;
+    function cat() public returns (CatAbstract);
+    // VowAbstract public vow;
+    function vow() public returns (VowAbstract);
+    // PotAbstract public pot;
+    function pot() public returns (PotAbstract);
+    // SpotAbstract public spot;
+    function spot() public returns (SpotAbstract);
+    // uint256  public live;  // cage flag
+    function live() public returns (uint256);
+    // uint256  public when;  // time of cage
+    function when() public returns (uint256);
+    //uint256  public wait;  // processing cooldown length
+    function wait() public returns (uint256);
+    // uint256  public debt;  // total outstanding dai following processing [rad]
+    function debt() public returns (uint256);
+    // mapping (bytes32 => uint256) public tag;  // cage price           [ray]
+    function tag(bytes32) public returns (uint256);
+    // mapping (bytes32 => uint256) public gap;  // collateral shortfall [wad]
+    function gap(bytes32) public returns (uint256);
+    // mapping (bytes32 => uint256) public Art;  // total debt per ilk   [wad]
+    function Art(bytes32) public returns (uint256);
+    // mapping (bytes32 => uint256) public fix;  // final cash price     [ray]
+    function fix(bytes32) public returns (uint256);
+    // mapping (address => uint256) public bag;  // [wad]
+    function bag(address) public returns (uint256);
+    // mapping (bytes32 => mapping (address => uint256)) public out;  // [wad]
+    function out(bytes32, address) public returns (uint256);
+    // uint256 public WAD;
+    function WAD() public returns (uint256);
+    // uint256 public RAY;
+    function RAY() public returns (uint256);
     function file(bytes32, address) external;
     function file(bytes32, uint256) external;
     function cage() external;
