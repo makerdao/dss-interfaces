@@ -15,7 +15,7 @@ import { VatAbstract, VowAbstract } from "dss-interfaces/Interfaces.sol";
 Import individual contracts
 
 ```
-import "dss-interfaces/dss/VatAbstract.sol";
+import "lib/dss-interfaces/src/dss/VatAbstract.sol";
 ```
 
 
