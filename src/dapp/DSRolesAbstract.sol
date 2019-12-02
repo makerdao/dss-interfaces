@@ -1,7 +1,7 @@
 pragma solidity ^0.5.12;
 
 // https://github.com/dapphub/ds-roles
-contract RolesAbstract {
+contract DSRolesAbstract {
     // mapping(address=>bool) _root_users;
     function _root_users(address) public returns (bool);
     // mapping(address=>bytes32) _user_roles;

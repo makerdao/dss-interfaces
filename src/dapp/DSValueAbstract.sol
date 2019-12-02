@@ -1,7 +1,7 @@
 pragma solidity ^0.5.12;
 
 // https://github.com/dapphub/ds-value/blob/master/src/value.sol
-contract PipAbstract {
+contract DSValueAbstract {
     // bool public has;
     function has() public returns (bool);
     // bytes32 public val;

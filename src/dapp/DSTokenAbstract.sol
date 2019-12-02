@@ -2,7 +2,7 @@ pragma solidity ^0.5.12;
 
 // MKR Token adheres to the DSToken interface
 // https://github.com/dapphub/ds-token/blob/master/src/token.sol
-contract TokenAbstract {
+contract DSTokenAbstract {
     // bytes32 public name;
     function name() public returns (bytes32);
     // bytes32 public symbol;

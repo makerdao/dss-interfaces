@@ -1,7 +1,7 @@
 pragma solidity ^0.5.12;
 
 import { VatAbstract } from "./VatAbstract.sol";
-import { PipAbstract } from "../dapp/PipAbstract.sol";
+import { PipAbstract } from "./PipAbstract.sol";
 
 // https://github.com/makerdao/dss/blob/master/src/spot.sol
 contract SpotAbstract {
