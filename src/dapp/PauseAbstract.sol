@@ -6,7 +6,7 @@ import { DSAuthorityAbstract } from "./AuthorityAbstract.sol";
 // https://github.com/dapphub/ds-pause
 contract PauseAbstract {
     function setOwner(address) public;
-    function setAuthority(DSAuthority) public;
+    function setAuthority(DSAuthorityAbstract) public;
     function setDelay(uint256) public;
     // mapping (bytes32 => bool) public plans;
     function plans(bytes32) public returns (bool);
