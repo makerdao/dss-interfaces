@@ -8,6 +8,8 @@ import { DSPauseAbstract } from "./dapp/DSPauseAbstract.sol";
 import { DSPauseProxyAbstract } from "./dapp/DSPauseProxyAbstract.sol";
 import { DSValueAbstract } from "./dapp/DSValueAbstract.sol";
 import { DSRolesAbstract } from "./dapp/DSRolesAbstract.sol";
+import { DSSpellAbstract } from "./dapp/DSSpellAbstract.sol";
+import { DSSpellBookAbstract } from "./dapp/DSSpellBookAbstract.sol";
 import { DSTokenAbstract } from "./dapp/DSTokenAbstract.sol";
 
 import { AuthGemJoinAbstract } from "./dss/AuthGemJoinAbstract.sol";
