@@ -6,11 +6,11 @@ import { DSAuthorityAbstract, DSAuthEventsAbstract, DSAuthAbstract } from "./dap
 import { DSChiefAbstract } from "./dapp/DSChiefAbstract.sol";
 import { DSPauseAbstract } from "./dapp/DSPauseAbstract.sol";
 import { DSPauseProxyAbstract } from "./dapp/DSPauseProxyAbstract.sol";
-import { DSValueAbstract } from "./dapp/DSValueAbstract.sol";
 import { DSRolesAbstract } from "./dapp/DSRolesAbstract.sol";
 import { DSSpellAbstract } from "./dapp/DSSpellAbstract.sol";
 import { DSSpellBookAbstract } from "./dapp/DSSpellBookAbstract.sol";
 import { DSTokenAbstract } from "./dapp/DSTokenAbstract.sol";
+import { DSValueAbstract } from "./dapp/DSValueAbstract.sol";
 
 import { AuthGemJoinAbstract } from "./dss/AuthGemJoinAbstract.sol";
 import { CatAbstract } from "./dss/CatAbstract.sol";
