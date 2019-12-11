@@ -4,11 +4,11 @@ pragma solidity ^0.5.12;
 // https://github.com/dapphub/ds-token/blob/master/src/token.sol
 contract DSTokenAbstract {
     // bytes32 public name;
-    function name() public returns (bytes32);
+    function name() public view returns (bytes32);
     // bytes32 public symbol;
-    function symbol() public returns (bytes32);
+    function symbol() public view returns (bytes32);
     // uint256 public decimals;
-    function decimals() public returns (uint256);
+    function decimals() public view returns (uint256);
     function totalSupply() external view returns (uint256);
     function balanceOf(address) external view returns (uint256);
     function transfer(address, uint256) external returns (bool);

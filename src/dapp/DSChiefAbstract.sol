@@ -7,21 +7,21 @@ import { DSAuthorityAbstract } from "./DSAuthorityAbstract.sol";
 // https://github.com/dapphub/ds-chief
 contract DSChiefApprovals {
     // mapping(bytes32=>address[]) public slates;
-    function slates(bytes32) public returns (address[] memory);
+    function slates(bytes32) public view returns (address[] memory);
     // mapping(address=>bytes32) public votes;
-    function votes(address) public returns (bytes32);
+    function votes(address) public view returns (bytes32);
     // mapping(address=>uint256) public approvals;
-    function approvals(address) public returns (uint256);
+    function approvals(address) public view returns (uint256);
     // mapping(address=>uint256) public deposits;
-    function deposits(address) public returns (address);
+    function deposits(address) public view returns (address);
     // DSToken public GOV; // voting token that gets locked up
-    function GOV() public returns (DSTokenAbstract);
+    function GOV() public view returns (DSTokenAbstract);
     // DSToken public IOU; // non-voting representation of a token, for e.g. secondary voting mechanisms
-    function IOU() public returns (DSTokenAbstract);
+    function IOU() public view returns (DSTokenAbstract);
     // address public hat; // the chieftain's hat
-    function hat() public returns (address);
+    function hat() public view returns (address);
     // uint256 public MAX_YAYS;
-    function MAX_YAYS() public returns (uint256);
+    function MAX_YAYS() public view returns (uint256);
     event Etch(bytes32 indexed);
     function lock(uint256) public;
     function free(uint256) public;

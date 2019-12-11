@@ -6,7 +6,7 @@ import { DSTokenAbstract } from "../dapp/DSTokenAbstract.sol";
 // https://github.com/makerdao/dss/blob/master/src/flap.sol
 contract FlapAbstract {
     //mapping (address => uint256) public wards;
-    function wards(address) public returns (uint256);
+    function wards(address) public view returns (uint256);
     function rely(address) external;
     function deny(address) external;
     struct Bid {
@@ -17,23 +17,23 @@ contract FlapAbstract {
         uint48  end;
     }
     // mapping (uint256 => Bid) public bids;
-    function bids(uint256) public returns (uint256);
+    function bids(uint256) public view returns (uint256);
     // VatAbstract public vat;
-    function vat() public returns (VatAbstract);
+    function vat() public view returns (VatAbstract);
     // TokenAbstract public gem;
-    function gem() public returns (DSTokenAbstract);
+    function gem() public view returns (DSTokenAbstract);
     // uint256 public ONE;
-    function ONE() public returns (uint256);
+    function ONE() public view returns (uint256);
     // uint256 public beg;
-    function beg() public returns (uint256);
+    function beg() public view returns (uint256);
     // uint48 public ttl;
-    function ttl() public returns (uint48);
+    function ttl() public view returns (uint48);
     // uint48 public tau;
-    function tau() public returns (uint48);
+    function tau() public view returns (uint48);
     // uint256 public kicks;
-    function kicks() public returns (uint256);
+    function kicks() public view returns (uint256);
     // uint256 public live;
-    function live() public returns (uint256);
+    function live() public view returns (uint256);
     event Kick(uint256, uint256, uint256);
     function file(bytes32, uint256) external;
     function kick(uint256, uint256) external returns (uint256);
