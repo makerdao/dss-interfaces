@@ -7,33 +7,33 @@ import { VatAbstract } from "./VatAbstract.sol";
 // https://github.com/makerdao/dss/blob/master/src/vow.sol
 contract VowAbstract {
     // mapping (address => uint) public wards;
-    function wards(address) public returns (uint256);
+    function wards(address) public view returns (uint256);
     function rely(address usr) external;
     function deny(address usr) external;
     // VatAbstract public vat;
-    function vat() public returns (VatAbstract);
+    function vat() public view returns (VatAbstract);
     // FlapAbstract public flapper;
-    function flapper() public returns (FlapAbstract);
+    function flapper() public view returns (FlapAbstract);
     // FlopAbstract public flopper;
-    function flopper() public returns (FlopAbstract);
+    function flopper() public view returns (FlopAbstract);
     // mapping (uint256 => uint256) public sin; // debt queue
-    function sin(uint256) public returns (uint256);
+    function sin(uint256) public view returns (uint256);
     // uint256 public Sin;   // queued debt          [rad]
-    function Sin() public returns (uint256);
+    function Sin() public view returns (uint256);
     // uint256 public Ash;
-    function Ash() public returns (uint256);
+    function Ash() public view returns (uint256);
     // uint256 public wait;  // flop delay
-    function wait() public returns (uint256);
+    function wait() public view returns (uint256);
     // uint256 public dump;  // flop initial lot size  [wad]
-    function dump() public returns (uint256);
+    function dump() public view returns (uint256);
     // uint256 public sump;  // flop fixed bid size    [rad]
-    function sump() public returns (uint256);
+    function sump() public view returns (uint256);
     // uint256 public bump;  // flap fixed lot size    [rad]
-    function bump() public returns (uint256);
+    function bump() public view returns (uint256);
     // uint256 public hump;  // surplus buffer       [rad]
-    function hump() public returns (uint256);
+    function hump() public view returns (uint256);
     // uint256 public live;
-    function live() public returns (uint256);
+    function live() public view returns (uint256);
     function file(bytes32, uint256) external;
     function file(bytes32, address) external;
     function fess(uint256) external;

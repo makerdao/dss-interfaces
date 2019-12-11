@@ -12,9 +12,9 @@ contract DSAuthEventsAbstract {
 
 contract DSAuthAbstract is DSAuthEventsAbstract {
     // DSAuthority  public  authority;
-    function authority() public returns (DSAuthorityAbstract);
+    function authority() public view returns (DSAuthorityAbstract);
     // address      public  owner;
-    function owner() public returns (address);
+    function owner() public view returns (address);
     function setOwner(address) public;
     function setAuthority(DSAuthorityAbstract) public;
 }
