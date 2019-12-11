@@ -28,3 +28,5 @@ import { PotAbstract } from "./dss/PotAbstract.sol";
 import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { VatAbstract } from "./dss/VatAbstract.sol";
 import { VowAbstract } from "./dss/VowAbstract.sol";
+
+import { PotHelper } from "./dss/PotHelper.sol";
