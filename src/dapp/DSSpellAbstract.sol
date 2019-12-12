@@ -7,7 +7,7 @@ contract DSSpellAbstract {
     // uint256 public mana;
     function mana() public view returns (uint256);
     // bytes   public data;
-    function data() public view returns (bytes32);
+    function data() public view returns (bytes);
     //bool    public done;
     function done() public view returns (bool);
     function cast() public;
