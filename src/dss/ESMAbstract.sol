@@ -1,14 +1,13 @@
 pragma solidity ^0.5.12;
 
-import { GemAbstract } from "../ERC/GemAbstract.sol";
-import { EndAbstract } from "./EndAbstract.sol";
-
 // https://github.com/makerdao/esm/blob/master/src/ESM.sol
 contract ESMAbstract {
     // GemLike public gem; // collateral
-    function gem() public view returns (GemAbstract);
+    // gem return address will conform to GemAbstract
+    function gem() public view returns (address);
     // EndLike public end; // cage module
-    function end() public view returns (EndAbstract);
+    // end return address will conform to EndAbstract
+    function end() public view returns (address);
     // address public pit; // burner
     function pit() public view returns (address);
     // uint256 public min; // threshold
