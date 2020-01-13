@@ -1,9 +1,5 @@
 pragma solidity ^0.5.12;
 
-import { FlopAbstract } from "./FlopAbstract.sol";
-import { FlapAbstract } from "./FlapAbstract.sol";
-import { VatAbstract } from "./VatAbstract.sol";
-
 // https://github.com/makerdao/dss/blob/master/src/vow.sol
 contract VowAbstract {
     // mapping (address => uint) public wards;
@@ -11,11 +7,11 @@ contract VowAbstract {
     function rely(address usr) external;
     function deny(address usr) external;
     // VatAbstract public vat;
-    function vat() public view returns (VatAbstract);
+    function vat() public view returns (address);
     // FlapAbstract public flapper;
-    function flapper() public view returns (FlapAbstract);
+    function flapper() public view returns (address);
     // FlopAbstract public flopper;
-    function flopper() public view returns (FlopAbstract);
+    function flopper() public view returns (address);
     // mapping (uint256 => uint256) public sin; // debt queue
     function sin(uint256) public view returns (uint256);
     // uint256 public Sin;   // queued debt          [rad]

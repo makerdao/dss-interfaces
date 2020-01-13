@@ -1,8 +1,5 @@
 pragma solidity ^0.5.12;
 
-import { VatAbstract } from "./VatAbstract.sol";
-import { DSTokenAbstract } from "../dapp/DSTokenAbstract.sol";
-
 // https://github.com/makerdao/dss/blob/master/src/flop.sol
 contract FlopAbstract {
     // mapping (address => uint256) public wards;
@@ -19,9 +16,10 @@ contract FlopAbstract {
     // mapping (uint => Bid) public bids;
     function bids(uint256) public view returns (uint256, uint256, address, uint48, uint48);
     //VatAbstract public vat;
-    function vat() public view returns (VatAbstract);
+    function vat() public view returns (address);
     // TokenAbstract public gem;
-    function gem() public view returns (DSTokenAbstract);
+    // gem return address will conform to DSTokenAbstract
+    function gem() public view returns (address);
     // uint256 public ONE;
     function ONE() public view returns (uint256);
     // uint256 public beg;  // 5% minimum bid increase

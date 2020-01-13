@@ -11,10 +11,10 @@ contract DSChiefApprovals {
     // mapping(address=>uint256) public deposits;
     function deposits(address) public view returns (address);
     // DSToken public GOV; // voting token that gets locked up
-    // import { DSTokenAbstract } from "./DSTokenAbstract.sol";
+    // GOV return address will conform to DSTokenAbstract
     function GOV() public view returns (address);
     // DSToken public IOU; // non-voting representation of a token, for e.g. secondary voting mechanisms
-    // import { DSTokenAbstract } from "./DSTokenAbstract.sol";
+    // IOU return address will conform to DSTokenAbstract
     function IOU() public view returns (address);
     // address public hat; // the chieftain's hat
     function hat() public view returns (address);

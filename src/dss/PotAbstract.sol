@@ -1,7 +1,5 @@
 pragma solidity ^0.5.12;
 
-import { VatAbstract } from "./VatAbstract.sol";
-
 // https://github.com/makerdao/dss/blob/master/src/pot.sol
 contract PotAbstract {
     // mapping (address => uint256) public wards;
@@ -17,7 +15,7 @@ contract PotAbstract {
     // uint256 public chi;  // the Rate Accumulator
     function chi() public view returns (uint256);
     // VatAbstract public vat;  // CDP engine
-    function vat() public view returns (VatAbstract);
+    function vat() public view returns (address);
     // address public vow;  // debt engine
     function vow() public view returns (address);
     // uint256 public rho;  // time of last drip
