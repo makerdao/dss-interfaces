@@ -36,8 +36,8 @@ contract DSChiefAbstract is DSChiefApprovals {
     function isUserRoot(address) public view returns (bool);
     function setRootUser(address, bool) public;
 
-    // DS-Roles
-        // mapping(address=>bool) _root_users;
+    //// DS-Roles
+    // mapping(address=>bool) _root_users;
     function _root_users(address) public view returns (bool);
     // mapping(address=>bytes32) _user_roles;
     function _user_roles(address) public view returns (bytes32);

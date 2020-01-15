@@ -8,7 +8,7 @@ contract DSPauseAbstract {
     function setDelay(uint256) public;
     // mapping (bytes32 => bool) public plans;
     function plans(bytes32) public view returns (bool);
-    // DSProxyAbstract public proxy;
+    // DSPauseProxyAbstract public proxy;
     function proxy() public view returns (address);
     // uint256 public delay;
     function delay() public view returns (uint256);
