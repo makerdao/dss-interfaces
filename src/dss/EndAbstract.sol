@@ -1,11 +1,5 @@
 pragma solidity ^0.5.12;
 
-import { VatAbstract } from "./VatAbstract.sol";
-import { CatAbstract } from "./CatAbstract.sol";
-import { VowAbstract } from "./VowAbstract.sol";
-import { PotAbstract } from "./PotAbstract.sol";
-import { SpotAbstract } from "./SpotAbstract.sol";
-
 // https://github.com/makerdao/dss/blob/master/src/end.sol
 contract EndAbstract {
     // mapping (address => uint) public wards;
@@ -13,15 +7,15 @@ contract EndAbstract {
     function rely(address) external;
     function deny(address) external;
     // VatAbstract public vat;
-    function vat() public view returns (VatAbstract);
+    function vat() public view returns (address);
     // CatAbstract public cat;
-    function cat() public view returns (CatAbstract);
+    function cat() public view returns (address);
     // VowAbstract public vow;
-    function vow() public view returns (VowAbstract);
+    function vow() public view returns (address);
     // PotAbstract public pot;
-    function pot() public view returns (PotAbstract);
+    function pot() public view returns (address);
     // SpotAbstract public spot;
-    function spot() public view returns (SpotAbstract);
+    function spot() public view returns (address);
     // uint256  public live;  // cage flag
     function live() public view returns (uint256);
     // uint256  public when;  // time of cage

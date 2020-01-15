@@ -1,8 +1,5 @@
 pragma solidity ^0.5.12;
 
-import { VatAbstract } from "./VatAbstract.sol";
-import { PipAbstract } from "./PipAbstract.sol";
-
 // https://github.com/makerdao/dss/blob/master/src/spot.sol
 contract SpotAbstract {
     // mapping (address => uint) public wards;
@@ -10,13 +7,14 @@ contract SpotAbstract {
     function rely(address) external;
     function deny(address) external;
     struct Ilk {
-        PipAbstract pip;
+        address pip;
         uint256 mat;
     }
     // mapping (bytes32 => Ilk) public ilks;
-    function ilks(bytes32) public view returns (PipAbstract, uint256);
+    // ilks return address will conform to PipAbstract
+    function ilks(bytes32) public view returns (address, uint256);
     // VatAbstract public vat;
-    function vat() public view returns (VatAbstract);
+    function vat() public view returns (address);
     // uint256 public par; // ref per dai
     function par() public view returns (uint256);
     // uint256 public live;

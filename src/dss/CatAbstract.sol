@@ -1,8 +1,5 @@
 pragma solidity ^0.5.12;
 
-import { VatAbstract } from "./VatAbstract.sol";
-import { VowAbstract } from "./VowAbstract.sol";
-
 // https://github.com/makerdao/dss/blob/master/src/cat.sol
 contract CatAbstract {
     // mapping (address => uint) public wards;
@@ -19,9 +16,9 @@ contract CatAbstract {
     // uint256 public live;
     function live() public view returns (uint256);
     // VatAbstract public vat;
-    function vat() public view returns (VatAbstract);
+    function vat() public view returns (address);
     // VowAbstract public vow;
-    function vow() public view returns (VowAbstract);
+    function vow() public view returns (address);
     event Bite(bytes32, address, uint256, uint256, uint256, address, uint256);
     // uint256 public ONE;
     function ONE() public returns (uint256);

@@ -1,7 +1,5 @@
 pragma solidity ^0.5.12;
 
-import { VatAbstract } from "./VatAbstract.sol";
-
 // https://github.com/makerdao/dss/blob/master/src/flip.sol
 contract FlipAbstract {
     // mapping (address => uint) public wards;
@@ -21,7 +19,7 @@ contract FlipAbstract {
     // mapping (uint => Bid) public bids;
     function bids(uint256) public view returns (uint256, uint256, address, uint48, uint48, address, address, uint256);
     // VatAbstract public vat;
-    function vat() public view returns (VatAbstract);
+    function vat() public view returns (address);
     // bytes32 public ilk;
     function ilk() public view returns (bytes32);
     // uint256 constant ONE;
