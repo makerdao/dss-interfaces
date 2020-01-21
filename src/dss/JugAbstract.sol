@@ -18,7 +18,7 @@ contract JugAbstract {
     function vow() public view returns (address);
     // uint256 public base;
     function base() public view returns (address);
-    //uint256 constant ONE = 10 ** 27;
+    // uint256 constant ONE = 10 ** 27;
     function ONE() public view returns (uint256);
     function init(bytes32) external;
     function file(bytes32, bytes32, uint256) external;
