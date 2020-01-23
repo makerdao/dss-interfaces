@@ -8,7 +8,7 @@ import { DSPauseAbstract } from "./dapp/DSPauseAbstract.sol";
 import { DSPauseProxyAbstract } from "./dapp/DSPauseProxyAbstract.sol";
 import { DSRolesAbstract } from "./dapp/DSRolesAbstract.sol";
 import { DSSpellAbstract } from "./dapp/DSSpellAbstract.sol";
-import { DSSpellBookAbstract } from "./dapp/DSSpellBookAbstract.sol";
+import { DSRuneAbstract } from "./dapp/DSRuneAbstract.sol";
 import { DSTokenAbstract } from "./dapp/DSTokenAbstract.sol";
 import { DSValueAbstract } from "./dapp/DSValueAbstract.sol";
 
