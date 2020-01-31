@@ -22,5 +22,4 @@ contract SaiMomAbstract is DSThingAbstract {
     function setTapGap(uint256) public;               // Boom/Bust Spread
     function setWay(uint256) public;                  // Rate of change of target price (per second)
     function setHow(uint256) public;
-    }
 }
