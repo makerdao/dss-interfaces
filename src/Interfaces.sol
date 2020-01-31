@@ -36,5 +36,6 @@ import { VowAbstract } from "./dss/VowAbstract.sol";
 import { GemPitAbstract } from "./sai/GemPitAbstract.sol";
 import { SaiMomAbstract } from "./sai/SaiMomAbstract.sol";
 import { SaiTapAbstract } from "./sai/SaiTapAbstract.sol";
+import { SaiTopAbstract } from "./sai/SaiTopAbstract.sol";
 
 import { PotHelper } from "./dss/PotHelper.sol";
