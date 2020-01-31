@@ -32,4 +32,9 @@ import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { VatAbstract } from "./dss/VatAbstract.sol";
 import { VowAbstract } from "./dss/VowAbstract.sol";
 
+// Sai
+import { GemPitAbstract } from "./sai/GemPitAbstract.sol";
+import { SaiMomAbstract } from "./sai/SaiMomAbstract.sol";
+import { SaiTapAbstract } from "./sai/SaiTapAbstract.sol";
+
 import { PotHelper } from "./dss/PotHelper.sol";
