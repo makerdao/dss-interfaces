@@ -5,18 +5,18 @@ import { DSThingAbstract } from "../dapp/DSThingAbstract.sol";
 // https://github.com/makerdao/sai/blob/master/src/tap.sol
 contract SaiTapAbstract is DSThingAbstract {
     // DSToken  public  sai;
-    function sai() public returns (address);
+    function sai() public view returns (address);
     // DSToken  public  sin;
-    function sin() public returns (address);
+    function sin() public view returns (address);
     // DSToken  public  skr;
-    function skr() public returns (address);
+    function skr() public view returns (address);
     // SaiVox   public  vox;
-    function vox() public returns (address);
+    function vox() public view returns (address);
     // SaiTub   public  tub;
-    function tub() public returns (address);
-    function gap() public returns (uint256);       // Boom-Bust Spread
-    function off() public returns (bool);          // Cage flag
-    function fix() public returns (uint256);       // Cage price
+    function tub() public view returns (address);
+    function gap() public view returns (uint256);       // Boom-Bust Spread
+    function off() public view returns (bool);          // Cage flag
+    function fix() public view returns (uint256);       // Cage price
     function joy() public view returns (uint256);  // Surplus
     function woe() public view returns (uint256);  // Bad debt
     function fog() public view returns (uint256);  // Collateral pending liquidation

@@ -5,11 +5,11 @@ import { DSThingAbstract } from "../dapp/DSThingAbstract.sol";
 // https://github.com/makerdao/sai/blob/master/src/mom.sol
 contract SaiMomAbstract is DSThingAbstract {
     // SaiTub  public  tub;
-    function tub() public returns (address);
+    function tub() public view returns (address);
     // SaiTap  public  tap;
-    function tap() public returns (address);
+    function tap() public view returns (address);
     // SaiVox  public  vox;
-    function vox() public returns (address);
+    function vox() public view returns (address);
     function setCap(uint256) public;                  // Debt ceiling
     function setMat(uint256) public;                  // Liquidation ratio
     function setTax(uint256) public;                  // Stability fee
