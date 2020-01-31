@@ -38,5 +38,6 @@ import { SaiMomAbstract } from "./sai/SaiMomAbstract.sol";
 import { SaiTapAbstract } from "./sai/SaiTapAbstract.sol";
 import { SaiTopAbstract } from "./sai/SaiTopAbstract.sol";
 import { SaiTubAbstract } from "./sai/SaiTubAbstract.sol";
+import { SaiVoxAbstract } from "./sai/SaiVoxAbstract.sol";
 
 import { PotHelper } from "./dss/PotHelper.sol";
