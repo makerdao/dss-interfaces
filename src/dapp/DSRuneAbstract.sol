@@ -25,7 +25,7 @@ contract DSRuneAbstract {
     // @return [bytes32] extcodehash of rune address
     function tag()      public view returns (bytes32);
     // @return [bytes] The `abi.encodeWithSignature()` result of the function to be called.
-    function sig()      public view returns (bytes);
+    function sig()      public view returns (bytes memory);
     // @return [uint256] Earliest time rune can execute
     function eta()      public view returns (uint256);
     // The schedule() function plots the rune in the DSPause

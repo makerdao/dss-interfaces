@@ -32,4 +32,13 @@ import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { VatAbstract } from "./dss/VatAbstract.sol";
 import { VowAbstract } from "./dss/VowAbstract.sol";
 
+// Sai
+import { GemPitAbstract } from "./sai/GemPitAbstract.sol";
+import { SaiMomAbstract } from "./sai/SaiMomAbstract.sol";
+import { SaiTapAbstract } from "./sai/SaiTapAbstract.sol";
+import { SaiTokenAbstract } from "./sai/SaiTokenAbstract.sol";
+import { SaiTopAbstract } from "./sai/SaiTopAbstract.sol";
+import { SaiTubAbstract } from "./sai/SaiTubAbstract.sol";
+import { SaiVoxAbstract } from "./sai/SaiVoxAbstract.sol";
+
 import { PotHelper } from "./dss/PotHelper.sol";
