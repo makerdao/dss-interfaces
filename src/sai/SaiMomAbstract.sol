@@ -1,9 +1,7 @@
 pragma solidity ^0.5.12;
 
-import { DSThingAbstract } from "../dapp/DSThingAbstract.sol";
-
 // https://github.com/makerdao/sai/blob/master/src/mom.sol
-contract SaiMomAbstract is DSThingAbstract {
+contract SaiMomAbstract {
     // SaiTub  public  tub;
     function tub() public view returns (address);
     // SaiTap  public  tap;
@@ -22,4 +20,11 @@ contract SaiMomAbstract is DSThingAbstract {
     function setTapGap(uint256) public;               // Boom/Bust Spread
     function setWay(uint256) public;                  // Rate of change of target price (per second)
     function setHow(uint256) public;
+    // ds-thing
+    // DSAuthority  public  authority;
+    function authority() public view returns (address);
+    // address      public  owner;
+    function owner() public view returns (address);
+    function setOwner(address) public;
+    function setAuthority(address) public;
 }
