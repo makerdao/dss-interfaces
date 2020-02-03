@@ -1,9 +1,7 @@
 pragma solidity ^0.5.12;
 
-import { DSThingAbstract } from "../dapp/DSThingAbstract.sol";
-
 // https://github.com/makerdao/sai/blob/master/src/tub.sol
-contract SaiTubAbstract is DSThingAbstract {
+contract SaiTubAbstract {
     // DSToken  public  sai;  // Stablecoin
     function sai() public view returns (address);
     // DSToken  public  sin;  // Debt (negative sai)
@@ -14,7 +12,7 @@ contract SaiTubAbstract is DSThingAbstract {
     function gem() public view returns (address);
     // DSToken  public  gov;  // Governance token
     function gov() public view returns (address);
-    //SaiVox   public  vox;  // Target price feed
+    // SaiVox   public  vox;  // Target price feed
     function vox() public view returns (address);
     // DSValue  public  pip;  // Reference price feed
     function pip() public view returns (address);
@@ -46,7 +44,7 @@ contract SaiTubAbstract is DSThingAbstract {
     function rho() public view returns (uint256);
     // uint256  public  rum;  // Total normalised debt
     function rum() public view returns (uint256);
-    // uint256                   public  cupi;
+    // uint256  public  cupi;
     function cupi() public view returns (uint256);
     // mapping (bytes32 => Cup)  public  cups;
     function cups(bytes32) public view returns (address, uint256, uint256, uint256);
@@ -83,4 +81,11 @@ contract SaiTubAbstract is DSThingAbstract {
     function bite(bytes32) public;
     function cage(uint256, uint256) public;
     function flow() public;
+    // ds-thing
+    // DSAuthority  public  authority;
+    function authority() public view returns (address);
+    // address      public  owner;
+    function owner() public view returns (address);
+    function setOwner(address) public;
+    function setAuthority(address) public;
 }

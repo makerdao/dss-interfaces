@@ -1,9 +1,7 @@
 pragma solidity ^0.5.12;
 
-import { DSThingAbstract } from "../dapp/DSThingAbstract.sol";
-
 // https://github.com/makerdao/sai/blob/master/src/tap.sol
-contract SaiTapAbstract is DSThingAbstract {
+contract SaiTapAbstract {
     // DSToken  public  sai;
     function sai() public view returns (address);
     // DSToken  public  sin;
@@ -31,4 +29,11 @@ contract SaiTapAbstract is DSThingAbstract {
     function cash(uint256) public;
     function mock(uint256) public;
     function vent() public;
+    // ds-thing
+    // DSAuthority  public  authority;
+    function authority() public view returns (address);
+    // address      public  owner;
+    function owner() public view returns (address);
+    function setOwner(address) public;
+    function setAuthority(address) public;
 }
