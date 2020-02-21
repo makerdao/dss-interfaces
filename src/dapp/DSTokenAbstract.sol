@@ -26,4 +26,11 @@ contract DSTokenAbstract {
     function setName(bytes32) public;
     event Transfer(address, address, uint256);
     event Approval(address, address, uint256);
+    // DSToken Inherits DSAuth
+    // DSAuthority  public  authority;
+    function authority() public view returns (address);
+    // address      public  owner;
+    function owner() public view returns (address);
+    function setOwner(address) public;
+    function setAuthority(address) public;
 }
