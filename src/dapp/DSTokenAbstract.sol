@@ -1,5 +1,7 @@
 pragma solidity ^0.5.12;
 
+import { DSAuthorityAbstract } from "./DSAuthorityAbstract.sol";
+
 // MKR Token adheres to the DSToken interface
 // https://github.com/dapphub/ds-token/blob/master/src/token.sol
 contract DSTokenAbstract {
