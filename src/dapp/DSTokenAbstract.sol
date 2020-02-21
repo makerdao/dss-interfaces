@@ -1,7 +1,5 @@
 pragma solidity ^0.5.12;
 
-import { DSAuthorityAbstract } from "./DSAuthorityAbstract.sol";
-
 // MKR Token adheres to the DSToken interface
 // https://github.com/dapphub/ds-token/blob/master/src/token.sol
 contract DSTokenAbstract {
@@ -30,9 +28,9 @@ contract DSTokenAbstract {
     event Approval(address, address, uint256);
     // DSToken Inherits DSAuth
     // DSAuthority  public  authority;
-    function authority() public view returns (DSAuthorityAbstract);
+    function authority() public view returns (address);
     // address      public  owner;
     function owner() public view returns (address);
     function setOwner(address) public;
-    function setAuthority(DSAuthorityAbstract) public;
+    function setAuthority(address) public;
 }
