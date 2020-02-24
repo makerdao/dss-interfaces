@@ -20,4 +20,11 @@ contract DSRolesAbstract {
     function setUserRole(address, uint8, bool) public;
     function setPublicCapability(address, bytes4, bool) public;
     function setRoleCapability(uint8, address, bytes4, bool) public;
+    // ds-auth
+    // DSAuthority  public  authority;
+    function authority() public view returns (address);
+    // address      public  owner;
+    function owner() public view returns (address);
+    function setOwner(address) public;
+    function setAuthority(address) public;
 }
