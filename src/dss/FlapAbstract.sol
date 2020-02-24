@@ -14,7 +14,7 @@ contract FlapAbstract {
         uint48  end;
     }
     // mapping (uint256 => Bid) public bids;
-    function bids(uint256) public view returns (uint256);
+    function bids(uint256) public view returns (uint256, uint256, address, uint48, uint48);
     // VatAbstract public vat;
     function vat() public view returns (address);
     // TokenAbstract public gem;
