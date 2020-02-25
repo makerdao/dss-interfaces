@@ -10,4 +10,10 @@ contract DSValueAbstract {
     function read() public view returns (bytes32);
     function poke(bytes32) public;
     function void() public;
+    // DSAuthority  public  authority;
+    function authority() public view returns (address);
+    // address      public  owner;
+    function owner() public view returns (address);
+    function setOwner(address) public;
+    function setAuthority(address) public;
 }
