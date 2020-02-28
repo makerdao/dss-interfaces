@@ -2,7 +2,7 @@ pragma solidity ^0.5.12;
 
 import { GemAbstract } from "./ERC/GemAbstract.sol";
 
-import { DSAuthorityAbstract, DSAuthEventsAbstract, DSAuthAbstract } from "./dapp/DSAuthorityAbstract.sol";
+import { DSAuthorityAbstract, DSAuthAbstract } from "./dapp/DSAuthorityAbstract.sol";
 import { DSChiefAbstract } from "./dapp/DSChiefAbstract.sol";
 import { DSPauseAbstract } from "./dapp/DSPauseAbstract.sol";
 import { DSPauseProxyAbstract } from "./dapp/DSPauseProxyAbstract.sol";
