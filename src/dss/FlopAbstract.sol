@@ -8,7 +8,6 @@ contract FlopAbstract {
     function bids(uint256) public view returns (uint256, uint256, address, uint48, uint48);
     function vat() public view returns (address);
     function gem() public view returns (address);
-    function ONE() public view returns (uint256);
     function beg() public view returns (uint256);
     function pad() public view returns (uint256);
     function ttl() public view returns (uint48);

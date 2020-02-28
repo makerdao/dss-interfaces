@@ -8,7 +8,6 @@ contract FlipAbstract {
     function bids(uint256) public view returns (uint256, uint256, address, uint48, uint48, address, address, uint256);
     function vat() public view returns (address);
     function ilk() public view returns (bytes32);
-    function ONE() public view returns (uint256);
     function beg() public view returns (uint256);
     function ttl() public view returns (uint48);
     function tau() public view returns (uint48);

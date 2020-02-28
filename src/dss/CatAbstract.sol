@@ -9,7 +9,6 @@ contract CatAbstract {
     function live() public view returns (uint256);
     function vat() public view returns (address);
     function vow() public view returns (address);
-    function ONE() public returns (uint256);
     function file(bytes32, address) external;
     function file(bytes32, bytes32, uint256) external;
     function file(bytes32, bytes32, address) external;
