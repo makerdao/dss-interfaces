@@ -2,13 +2,9 @@ pragma solidity ^0.5.12;
 
 // https://github.com/dapphub/ds-roles
 contract DSRolesAbstract {
-    // mapping(address=>bool) _root_users;
     function _root_users(address) public view returns (bool);
-    // mapping(address=>bytes32) _user_roles;
     function _user_roles(address) public view returns (bytes32);
-    // mapping(address=>mapping(bytes4=>bytes32)) _capability_roles;
     function _capability_roles(address, bytes4) public view returns (bytes32);
-    // mapping(address=>mapping(bytes4=>bool)) _public_capabilities;
     function _public_capabilities(address, bytes4) public view returns (bool);
     function getUserRoles(address) public view returns (bytes32);
     function getCapabilityRoles(address, bytes4) public view returns (bytes32);
@@ -20,10 +16,7 @@ contract DSRolesAbstract {
     function setUserRole(address, uint8, bool) public;
     function setPublicCapability(address, bytes4, bool) public;
     function setRoleCapability(uint8, address, bytes4, bool) public;
-    // ds-auth
-    // DSAuthority  public  authority;
     function authority() public view returns (address);
-    // address      public  owner;
     function owner() public view returns (address);
     function setOwner(address) public;
     function setAuthority(address) public;

@@ -7,15 +7,12 @@ contract SaiVoxAbstract {
     function tau() public view returns (uint256);
     function era() public view returns (uint256);
     function mold(bytes32, uint256) public;
-    function par() public returns (uint256);  // Dai Target Price (ref per dai)
+    function par() public returns (uint256);
     function way() public returns (uint256);
     function tell(uint256) public;
     function tune(uint256) public;
     function prod() public;
-    // ds-thing
-    // DSAuthority  public  authority;
     function authority() public view returns (address);
-    // address      public  owner;
     function owner() public view returns (address);
     function setOwner(address) public;
     function setAuthority(address) public;
