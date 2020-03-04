@@ -9,6 +9,4 @@ contract GemAbstract {
     function approve(address, uint256) public returns (bool);
     function transfer(address, uint256) public returns (bool);
     function transferFrom(address, address, uint256) public returns (bool);
-    event Approval(address, address, uint256);
-    event Transfer(address, address, uint256);
 }
