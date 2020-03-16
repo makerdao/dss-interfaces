@@ -21,6 +21,7 @@ import { ESMAbstract } from "./dss/ESMAbstract.sol";
 import { ETHJoinAbstract } from "./dss/ETHJoinAbstract.sol";
 import { FlapAbstract } from "./dss/FlapAbstract.sol";
 import { FlipAbstract } from "./dss/FlipAbstract.sol";
+import { FlipperMomAbstract } from "./dss/FlipperMomAbstract.sol";
 import { FlopAbstract } from "./dss/FlopAbstract.sol";
 import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
 import { JugAbstract } from "./dss/JugAbstract.sol";
