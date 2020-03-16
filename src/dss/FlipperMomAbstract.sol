@@ -7,6 +7,6 @@ contract FlipperMomAbstract {
     function authority() public returns (address);
     function setAuthority(address) external;
     function cat() public returns (address);
-    function rely(address, address) external;
-    function deny(address, address) external;
+    function rely(address) external;
+    function deny(address) external;
 }
