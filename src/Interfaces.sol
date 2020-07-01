@@ -27,6 +27,7 @@ import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
 import { JugAbstract } from "./dss/JugAbstract.sol";
 import { MKRAbstract } from "./dss/MKRAbstract.sol";
 import { MkrAuthorityAbstract } from "./dss/MkrAuthorityAbstract.sol";
+import { MedianAbstract } from "./dss/MedianAbstract.sol";
 import { OsmAbstract } from "./dss/OsmAbstract.sol";
 import { OsmMomAbstract } from "./dss/OsmMomAbstract.sol";
 import { PipAbstract } from "./dss/PipAbstract.sol";
