@@ -16,7 +16,7 @@ contract IlkRegistryAbstract;
         address,
         uint256,
         string memory,
-        string memory symbol
+        string memory
     );
     function ilks() public view returns (bytes32[] memory);
     function ilks(uint) public view returns (bytes32);
