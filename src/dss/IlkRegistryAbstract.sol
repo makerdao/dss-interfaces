@@ -20,7 +20,7 @@ contract IlkRegistryAbstract;
     );
     function ilks() public view returns (bytes32[] memory);
     function ilks(uint) public view returns (bytes32);
-    function add(address _adapter) external;
+    function add(address) external;
     function remove(bytes32) external;
     function removeAuth(bytes32) external;
     function file(bytes32, bytes32, address) external;
