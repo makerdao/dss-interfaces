@@ -1,7 +1,7 @@
 pragma solidity ^0.5.12;
 
 // https://github.com/makerdao/ilk-registry/blob/master/src/IlkRegistry.sol
-contract IlkRegistryAbstract;
+contract IlkRegistryAbstract {
     function wards(address) public view returns (uint256);
     function rely(address) external;
     function deny(address) external;
