@@ -1,4 +1,4 @@
-pragma solidity ^0.5.12;
+pragma solidity >0.5.12;
 
 import { PotAbstract } from "./PotAbstract.sol";
 
@@ -6,14 +6,14 @@ import { PotAbstract } from "./PotAbstract.sol";
 contract PotHelper {
 
     PotAbstract pa;
-    
+
     constructor(address pot) public {
         pa = PotAbstract(pot);
     }
 
     // https://github.com/makerdao/dss/blob/master/src/pot.sol#L79
     uint256 constant ONE = 10 ** 27;
-    
+
     function mul(uint x, uint y) internal pure returns (uint z) {
         require(y == 0 || (z = x * y) / y == x);
     }

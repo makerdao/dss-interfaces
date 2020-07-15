@@ -1,7 +1,7 @@
-pragma solidity ^0.5.12;
+pragma solidity >0.5.12;
 
 // https://github.com/makerdao/median
-contract MedianAbstract {
+interface MedianAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;
     function deny(address) external;

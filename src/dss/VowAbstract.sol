@@ -1,22 +1,22 @@
-pragma solidity ^0.5.12;
+pragma solidity >0.5.12;
 
 // https://github.com/makerdao/dss/blob/master/src/vow.sol
-contract VowAbstract {
-    function wards(address) public view returns (uint256);
+interface VowAbstract {
+    function wards(address) external view returns (uint256);
     function rely(address usr) external;
     function deny(address usr) external;
-    function vat() public view returns (address);
-    function flapper() public view returns (address);
-    function flopper() public view returns (address);
-    function sin(uint256) public view returns (uint256);
-    function Sin() public view returns (uint256);
-    function Ash() public view returns (uint256);
-    function wait() public view returns (uint256);
-    function dump() public view returns (uint256);
-    function sump() public view returns (uint256);
-    function bump() public view returns (uint256);
-    function hump() public view returns (uint256);
-    function live() public view returns (uint256);
+    function vat() external view returns (address);
+    function flapper() external view returns (address);
+    function flopper() external view returns (address);
+    function sin(uint256) external view returns (uint256);
+    function Sin() external view returns (uint256);
+    function Ash() external view returns (uint256);
+    function wait() external view returns (uint256);
+    function dump() external view returns (uint256);
+    function sump() external view returns (uint256);
+    function bump() external view returns (uint256);
+    function hump() external view returns (uint256);
+    function live() external view returns (uint256);
     function file(bytes32, uint256) external;
     function file(bytes32, address) external;
     function fess(uint256) external;

@@ -1,22 +1,22 @@
-pragma solidity ^0.5.12;
+pragma solidity >0.5.12;
 
 // https://github.com/makerdao/dss/blob/master/src/vat.sol
-contract VatAbstract {
-    function wards(address) public view returns (uint256);
+interface VatAbstract {
+    function wards(address) external view returns (uint256);
     function rely(address) external;
     function deny(address) external;
-    function can(address, address) public view returns (uint256);
+    function can(address, address) external view returns (uint256);
     function hope(address) external;
     function nope(address) external;
     function ilks(bytes32) external view returns (uint256, uint256, uint256, uint256, uint256);
-    function urns(bytes32, address) public view returns (uint256, uint256);
-    function gem(bytes32, address) public view returns (uint256);
-    function dai(address) public view returns (uint256);
-    function sin(address) public view returns (uint256);
-    function debt() public view returns (uint256);
-    function vice() public view returns (uint256);
-    function Line() public view returns (uint256);
-    function live() public view returns (uint256);
+    function urns(bytes32, address) external view returns (uint256, uint256);
+    function gem(bytes32, address) external view returns (uint256);
+    function dai(address) external view returns (uint256);
+    function sin(address) external view returns (uint256);
+    function debt() external view returns (uint256);
+    function vice() external view returns (uint256);
+    function Line() external view returns (uint256);
+    function live() external view returns (uint256);
     function init(bytes32) external;
     function file(bytes32, uint256) external;
     function file(bytes32, bytes32, uint256) external;

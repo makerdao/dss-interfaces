@@ -1,19 +1,19 @@
-pragma solidity ^0.5.12;
+pragma solidity >0.5.12;
 
 // https://github.com/makerdao/sai/blob/master/src/vox.sol
-contract SaiVoxAbstract {
-    function fix() public view returns (uint256);
-    function how() public view returns (uint256);
-    function tau() public view returns (uint256);
-    function era() public view returns (uint256);
-    function mold(bytes32, uint256) public;
-    function par() public returns (uint256);
-    function way() public returns (uint256);
-    function tell(uint256) public;
-    function tune(uint256) public;
-    function prod() public;
-    function authority() public view returns (address);
-    function owner() public view returns (address);
-    function setOwner(address) public;
-    function setAuthority(address) public;
+interface SaiVoxAbstract {
+    function fix() external view returns (uint256);
+    function how() external view returns (uint256);
+    function tau() external view returns (uint256);
+    function era() external view returns (uint256);
+    function mold(bytes32, uint256) external;
+    function par() external returns (uint256);
+    function way() external returns (uint256);
+    function tell(uint256) external;
+    function tune(uint256) external;
+    function prod() external;
+    function authority() external view returns (address);
+    function owner() external view returns (address);
+    function setOwner(address) external;
+    function setAuthority(address) external;
 }

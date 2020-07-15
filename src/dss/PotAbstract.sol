@@ -1,18 +1,18 @@
-pragma solidity ^0.5.12;
+pragma solidity >0.5.12;
 
 // https://github.com/makerdao/dss/blob/master/src/pot.sol
-contract PotAbstract {
-    function wards(address) public view returns (uint256);
+interface PotAbstract {
+    function wards(address) external view returns (uint256);
     function rely(address) external;
     function deny(address) external;
-    function pie(address) public view returns (uint256);
-    function Pie() public view returns (uint256);
-    function dsr() public view returns (uint256);
-    function chi() public view returns (uint256);
-    function vat() public view returns (address);
-    function vow() public view returns (address);
-    function rho() public view returns (uint256);
-    function live() public view returns (uint256);
+    function pie(address) external view returns (uint256);
+    function Pie() external view returns (uint256);
+    function dsr() external view returns (uint256);
+    function chi() external view returns (uint256);
+    function vat() external view returns (address);
+    function vow() external view returns (address);
+    function rho() external view returns (uint256);
+    function live() external view returns (uint256);
     function file(bytes32, uint256) external;
     function file(bytes32, address) external;
     function cage() external;
