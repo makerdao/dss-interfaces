@@ -25,7 +25,7 @@ import "lib/dss-interfaces/src/dss/VatAbstract.sol";
 ```
 import { VatAbstract } from "./Interfaces.sol";
 
-pragma solidity >0.5.12;
+pragma solidity >=0.5.12;
 
 contract Testerface {
 

@@ -1,4 +1,4 @@
-pragma solidity >0.5.12;
+pragma solidity >=0.5.12;
 
 // A base ERC-20 abstract class
 // https://eips.ethereum.org/EIPS/eip-20

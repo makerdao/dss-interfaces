@@ -1,4 +1,4 @@
-pragma solidity >0.5.12;
+pragma solidity >=0.5.12;
 
 // https://github.com/makerdao/dss/blob/master/src/vat.sol
 interface VatAbstract {

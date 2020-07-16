@@ -1,4 +1,4 @@
-pragma solidity >0.5.12;
+pragma solidity >=0.5.12;
 
 // https://github.com/dapphub/ds-token/blob/master/src/token.sol
 interface DSTokenAbstract {
