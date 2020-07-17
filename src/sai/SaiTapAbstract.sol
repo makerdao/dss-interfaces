@@ -1,31 +1,31 @@
-pragma solidity ^0.5.12;
+pragma solidity >=0.5.12;
 
 // https://github.com/makerdao/sai/blob/master/src/tap.sol
-contract SaiTapAbstract {
-    function sai() public view returns (address);
-    function sin() public view returns (address);
-    function skr() public view returns (address);
-    function vox() public view returns (address);
-    function tub() public view returns (address);
-    function gap() public view returns (uint256);
-    function off() public view returns (bool);
-    function fix() public view returns (uint256);
-    function joy() public view returns (uint256);
-    function woe() public view returns (uint256);
-    function fog() public view returns (uint256);
-    function mold(bytes32, uint256) public;
-    function heal() public;
-    function s2s() public returns (uint256);
-    function bid(uint256) public returns (uint256);
-    function ask(uint256) public returns (uint256);
-    function bust(uint256) public;
-    function boom(uint256) public;
-    function cage(uint256) public;
-    function cash(uint256) public;
-    function mock(uint256) public;
-    function vent() public;
-    function authority() public view returns (address);
-    function owner() public view returns (address);
-    function setOwner(address) public;
-    function setAuthority(address) public;
+interface SaiTapAbstract {
+    function sai() external view returns (address);
+    function sin() external view returns (address);
+    function skr() external view returns (address);
+    function vox() external view returns (address);
+    function tub() external view returns (address);
+    function gap() external view returns (uint256);
+    function off() external view returns (bool);
+    function fix() external view returns (uint256);
+    function joy() external view returns (uint256);
+    function woe() external view returns (uint256);
+    function fog() external view returns (uint256);
+    function mold(bytes32, uint256) external;
+    function heal() external;
+    function s2s() external returns (uint256);
+    function bid(uint256) external returns (uint256);
+    function ask(uint256) external returns (uint256);
+    function bust(uint256) external;
+    function boom(uint256) external;
+    function cage(uint256) external;
+    function cash(uint256) external;
+    function mock(uint256) external;
+    function vent() external;
+    function authority() external view returns (address);
+    function owner() external view returns (address);
+    function setOwner(address) external;
+    function setAuthority(address) external;
 }

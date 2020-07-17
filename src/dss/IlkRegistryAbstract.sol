@@ -1,14 +1,14 @@
-pragma solidity ^0.5.12;
+pragma solidity >=0.5.12;
 
 // https://github.com/makerdao/ilk-registry/blob/master/src/IlkRegistry.sol
-contract IlkRegistryAbstract {
-    function wards(address) public view returns (uint256);
+interface IlkRegistryAbstract {
+    function wards(address) external view returns (uint256);
     function rely(address) external;
     function deny(address) external;
-    function vat() public view returns (address);
-    function cat() public view returns (address);
-    function spot() public view returns (address);
-    function ilkData(bytes32) public view returns (
+    function vat() external view returns (address);
+    function cat() external view returns (address);
+    function spot() external view returns (address);
+    function ilkData(bytes32) external view returns (
         uint256,
         address,
         address,
@@ -18,8 +18,8 @@ contract IlkRegistryAbstract {
         string memory,
         string memory
     );
-    function ilks() public view returns (bytes32[] memory);
-    function ilks(uint) public view returns (bytes32);
+    function ilks() external view returns (bytes32[] memory);
+    function ilks(uint) external view returns (bytes32);
     function add(address) external;
     function remove(bytes32) external;
     function removeAuth(bytes32) external;

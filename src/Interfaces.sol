@@ -1,4 +1,4 @@
-pragma solidity ^0.5.12;
+pragma solidity >=0.5.12;
 
 import { GemAbstract } from "./ERC/GemAbstract.sol";
 
@@ -25,12 +25,10 @@ import { FlipperMomAbstract } from "./dss/FlipperMomAbstract.sol";
 import { FlopAbstract } from "./dss/FlopAbstract.sol";
 import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
 import { JugAbstract } from "./dss/JugAbstract.sol";
-import { MKRAbstract } from "./dss/MKRAbstract.sol";
 import { MkrAuthorityAbstract } from "./dss/MkrAuthorityAbstract.sol";
 import { MedianAbstract } from "./dss/MedianAbstract.sol";
 import { OsmAbstract } from "./dss/OsmAbstract.sol";
 import { OsmMomAbstract } from "./dss/OsmMomAbstract.sol";
-import { PipAbstract } from "./dss/PipAbstract.sol";
 import { PotAbstract } from "./dss/PotAbstract.sol";
 import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { VatAbstract } from "./dss/VatAbstract.sol";
@@ -41,7 +39,6 @@ import { IlkRegistryAbstract } from "./dss/IlkRegistryAbstract.sol";
 import { GemPitAbstract } from "./sai/GemPitAbstract.sol";
 import { SaiMomAbstract } from "./sai/SaiMomAbstract.sol";
 import { SaiTapAbstract } from "./sai/SaiTapAbstract.sol";
-import { SaiTokenAbstract } from "./sai/SaiTokenAbstract.sol";
 import { SaiTopAbstract } from "./sai/SaiTopAbstract.sol";
 import { SaiTubAbstract } from "./sai/SaiTubAbstract.sol";
 import { SaiVoxAbstract } from "./sai/SaiVoxAbstract.sol";
