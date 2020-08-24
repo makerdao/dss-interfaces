@@ -10,8 +10,10 @@ interface CatAbstract {
     function vat() external view returns (address);
     function vow() external view returns (address);
     function file(bytes32, address) external;
+    function file(bytes32, uint256) external;
     function file(bytes32, bytes32, uint256) external;
     function file(bytes32, bytes32, address) external;
     function bite(bytes32, address) external returns (uint256);
+    function claw(uint256) external;
     function cage() external;
 }
