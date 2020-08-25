@@ -5,6 +5,8 @@ interface CatAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;
     function deny(address) external;
+    function box() external view returns (uint256);
+    function litter() external view returns (uint256);
     function ilks(bytes32) external view returns (address, uint256, uint256);
     function live() external view returns (uint256);
     function vat() external view returns (address);
