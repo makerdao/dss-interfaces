@@ -7,6 +7,7 @@ interface FlipAbstract {
     function deny(address usr) external;
     function bids(uint256) external view returns (uint256, uint256, address, uint48, uint48, address, address, uint256);
     function vat() external view returns (address);
+    function cat() external view returns (address);
     function ilk() external view returns (bytes32);
     function beg() external view returns (uint256);
     function ttl() external view returns (uint48);
