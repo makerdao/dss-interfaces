@@ -1,6 +1,6 @@
 pragma solidity >=0.5.12;
 
-// https://github.com/makerdao/ilk-registry/blob/master/src/IlkRegistry.sol
+// https://github.com/makerdao/ilk-registry
 interface IlkRegistryAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;
@@ -9,20 +9,15 @@ interface IlkRegistryAbstract {
     function cat() external view returns (address);
     function spot() external view returns (address);
     function ilkData(bytes32) external view returns (
-        uint256,
-        address,
-        address,
-        address,
-        address,
-        uint256,
-        string memory,
-        string memory
+        uint256, address, address, address, address, uint256, string memory, string memory
     );
     function ilks() external view returns (bytes32[] memory);
     function ilks(uint) external view returns (bytes32);
     function add(address) external;
     function remove(bytes32) external;
+    function update(bytes32) external;
     function removeAuth(bytes32) external;
+    function file(bytes32, address) external;
     function file(bytes32, bytes32, address) external;
     function file(bytes32, bytes32, uint256) external;
     function file(bytes32, bytes32, string calldata) external;
@@ -31,13 +26,7 @@ interface IlkRegistryAbstract {
     function list(uint256, uint256) external view returns (bytes32[] memory);
     function get(uint256) external view returns (bytes32);
     function info(bytes32) external view returns (
-        string memory,
-        string memory,
-        uint256,
-        address,
-        address,
-        address,
-        address
+        string memory, string memory, uint256, address, address, address, address
     );
     function pos(bytes32) external view returns (uint256);
     function gem(bytes32) external view returns (address);
