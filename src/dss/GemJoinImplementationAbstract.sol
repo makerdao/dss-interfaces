@@ -1,6 +1,6 @@
 pragma solidity >=0.5.12;
 
-// https://github.com/makerdao/dss/blob/master/src/join.sol
+// https://github.com/makerdao/dss-deploy/blob/master/src/join.sol
 interface GemJoinImplementationAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;
