@@ -34,6 +34,7 @@ import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { VatAbstract } from "./dss/VatAbstract.sol";
 import { VowAbstract } from "./dss/VowAbstract.sol";
 import { IlkRegistryAbstract } from "./dss/IlkRegistryAbstract.sol";
+import { ChainlogAbstract } from "./dss/ChainlogAbstract.sol";
 
 // Sai
 import { GemPitAbstract } from "./sai/GemPitAbstract.sol";
