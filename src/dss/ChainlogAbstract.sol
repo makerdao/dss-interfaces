@@ -22,10 +22,6 @@ interface ChainlogAbstract {
 // Helper function for returning address or abstract of Chainlog
 //  Valid on Mainnet, Kovan, Rinkeby, Ropsten, and Goerli
 contract ChainlogHelper {
-    function Address() external pure returns (address) {
-        return 0xdA0Ab1e0017DEbCd72Be8599041a2aa3bA7e740F;
-    }
-    function Abstract() external pure returns (ChainlogAbstract) {
-        return ChainlogAbstract(0xdA0Ab1e0017DEbCd72Be8599041a2aa3bA7e740F);
-    }
+    address          public constant ADDRESS  = 0xdA0Ab1e0017DEbCd72Be8599041a2aa3bA7e740F;
+    ChainlogAbstract public constant ABSTRACT = ChainlogAbstract(ADDRESS);
 }
