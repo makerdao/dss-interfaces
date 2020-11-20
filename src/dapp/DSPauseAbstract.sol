@@ -2,6 +2,8 @@ pragma solidity >=0.5.12;
 
 // https://github.com/dapphub/ds-pause
 interface DSPauseAbstract {
+    function owner() external view returns (address);
+    function authority() external view returns (address);
     function setOwner(address) external;
     function setAuthority(address) external;
     function setDelay(uint256) external;
