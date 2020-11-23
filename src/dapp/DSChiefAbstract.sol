@@ -2,6 +2,8 @@ pragma solidity >=0.5.12;
 
 // https://github.com/dapphub/ds-chief
 interface DSChiefAbstract {
+    function live() external view returns (uint256);
+    function launch() external;
     function slates(bytes32) external view returns (address[] memory);
     function votes(address) external view returns (bytes32);
     function approvals(address) external view returns (uint256);
