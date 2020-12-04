@@ -5,6 +5,7 @@ interface DssAutoLineAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;
     function deny(address) external;
+    function vat() external view returns (address);
     function ilks(bytes32) external view returns (uint256,uint256,uint48,uint48,uint48);
     function setIlk(bytes32,uint256,uint256,uint256) external;
     function remIlk(bytes32) external;
