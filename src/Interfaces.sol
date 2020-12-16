@@ -28,6 +28,7 @@ import { FlipperMomAbstract } from "./dss/FlipperMomAbstract.sol";
 import { FlopAbstract } from "./dss/FlopAbstract.sol";
 import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
 import { JugAbstract } from "./dss/JugAbstract.sol";
+import { LPOsmAbstract } from "./dss/LPOsmAbstract.sol";
 import { MkrAuthorityAbstract } from "./dss/MkrAuthorityAbstract.sol";
 import { MedianAbstract } from "./dss/MedianAbstract.sol";
 import { OsmAbstract } from "./dss/OsmAbstract.sol";
