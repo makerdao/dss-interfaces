@@ -8,6 +8,8 @@ interface OsmAbstract {
     function deny(address) external;
     function stopped() external view returns (uint256);
     function src() external view returns (address);
+    function orb0() external view returns (address);
+    function orb1() external view returns (address);
     function hop() external view returns (uint16);
     function zzz() external view returns (uint64);
     function cur() external view returns (uint128, uint128);
