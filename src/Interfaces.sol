@@ -28,6 +28,8 @@ import { FlipAbstract } from "./dss/FlipAbstract.sol";
 import { FlipperMomAbstract } from "./dss/FlipperMomAbstract.sol";
 import { FlopAbstract } from "./dss/FlopAbstract.sol";
 import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
+import { GetCdpsAbstract } from "./dss/GetCdpsAbstract.sol";
+import { IlkRegistryAbstract } from "./dss/IlkRegistryAbstract.sol";
 import { JugAbstract } from "./dss/JugAbstract.sol";
 import { LPOsmAbstract } from "./dss/LPOsmAbstract.sol";
 import { MkrAuthorityAbstract } from "./dss/MkrAuthorityAbstract.sol";
@@ -38,7 +40,6 @@ import { PotAbstract } from "./dss/PotAbstract.sol";
 import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { VatAbstract } from "./dss/VatAbstract.sol";
 import { VowAbstract } from "./dss/VowAbstract.sol";
-import { IlkRegistryAbstract } from "./dss/IlkRegistryAbstract.sol";
 import { ChainlogAbstract } from "./dss/ChainlogAbstract.sol";
 import { ChainlogHelper } from "./dss/ChainlogAbstract.sol";
 
