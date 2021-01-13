@@ -18,7 +18,7 @@ import { CatAbstract } from "./dss/CatAbstract.sol";
 import { DaiAbstract } from "./dss/DaiAbstract.sol";
 import { DaiJoinAbstract } from "./dss/DaiJoinAbstract.sol";
 import { DssAutoLineAbstract } from "./dss/DssAutoLineAbstract.sol";
-import { DssCdpManagerAbstract } from "./dss/DssCdpManager.sol";
+import { DssCdpManagerAbstract } from "./dss/DssCdpManagerAbstract.sol";
 import { DssExecFactoryAbstract } from "./dss/DssExecFactoryAbstract.sol";
 import { EndAbstract } from "./dss/EndAbstract.sol";
 import { ESMAbstract } from "./dss/ESMAbstract.sol";
