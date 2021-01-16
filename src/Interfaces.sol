@@ -52,3 +52,5 @@ import { SaiTubAbstract } from "./sai/SaiTubAbstract.sol";
 import { SaiVoxAbstract } from "./sai/SaiVoxAbstract.sol";
 
 import { PotHelper } from "./dss/PotHelper.sol";
+
+import { LerpAbstract } from "./utils/LerpAbstract.sol";
