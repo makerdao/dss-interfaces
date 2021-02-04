@@ -40,3 +40,13 @@ contract Testerface {
     }
 }
 ```
+
+## Package Update
+
+Update the `version` field in `package.json` and from the command line run:
+```
+> npm login
+> npm publish
+```
+
+The published package will include all the files inside `src`.
