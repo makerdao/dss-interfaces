@@ -43,6 +43,16 @@ import { VowAbstract } from "./dss/VowAbstract.sol";
 import { ChainlogAbstract } from "./dss/ChainlogAbstract.sol";
 import { ChainlogHelper } from "./dss/ChainlogAbstract.sol";
 
+// Liq 2.0
+import { DogAbstract } from "./dss/DogAbstract.sol";
+import { ClipAbstract } from "./dss/ClipAbstract.sol";
+import {
+    Abacus,
+    LinearDecreaseAbstract,
+    StairstepExponentialDecreaseAbstract,
+    ExponentialDecreaseAbstract
+} from "./dss/AbaciAbstract.sol";
+
 // Sai
 import { GemPitAbstract } from "./sai/GemPitAbstract.sol";
 import { SaiMomAbstract } from "./sai/SaiMomAbstract.sol";
