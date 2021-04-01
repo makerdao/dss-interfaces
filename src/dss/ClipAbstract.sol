@@ -36,7 +36,7 @@ interface ClipAbstract {
     function tip() external view returns (uint192);
     function chost() external view returns (uint256);
     function kicks() external view returns (uint256);
-    function active() external view returns (uint256[] memory);
+    function active(uint256) external view returns (uint256);
     function sales(uint256) external view returns (uint256,uint256,uint256,address,uint96,uint256);
     function stopped() external view returns (uint256);
     function file(bytes32,uint256) external;

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-/// AbaciAbstract.sol -- Abaci Interfaces
+/// StairstepExponentialDecreaseAbstract.sol -- StairstepExponentialDecrease Interface
 
 // Copyright (C) 2021 Maker Ecosystem Growth Holdings, INC.
 //
@@ -19,31 +19,12 @@
 
 pragma solidity >=0.6.12;
 
-interface Abacus {
-    function price(uint256,uint256) external view returns (uint256);
-}
-
-interface LinearDecreaseAbstract is Abacus {
-    function wards(address) external view returns (uint256);
-    function rely(address) external;
-    function deny(address) external;
-    function tau() external view returns (uint256);
-    function file(bytes32,uint256) external;
-}
-
-interface StairstepExponentialDecreaseAbstract is Abacus {
+interface StairstepExponentialDecreaseAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;
     function deny(address) external;
     function step() external view returns (uint256);
     function cut() external view returns (uint256);
     function file(bytes32,uint256) external;
-}
-
-interface ExponentialDecreaseAbstract is Abacus {
-    function wards(address) external view returns (uint256);
-    function rely(address) external;
-    function deny(address) external;
-    function cut() external view returns (uint256);
-    function file(bytes32,uint256) external;
+    function price(uint256,uint256) external view returns (uint256);
 }

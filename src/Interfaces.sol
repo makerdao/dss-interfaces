@@ -46,12 +46,13 @@ import { ChainlogHelper } from "./dss/ChainlogAbstract.sol";
 // Liq 2.0
 import { DogAbstract } from "./dss/DogAbstract.sol";
 import { ClipAbstract } from "./dss/ClipAbstract.sol";
+import { LinearDecreaseAbstract } from "./dss/LinearDecreaseAbstract.sol";
 import {
-    Abacus,
-    LinearDecreaseAbstract,
-    StairstepExponentialDecreaseAbstract,
+    StairstepExponentialDecreaseAbstract
+} from "./dss/StairstepExponentialDecreaseAbstract.sol";
+import {
     ExponentialDecreaseAbstract
-} from "./dss/AbaciAbstract.sol";
+} from "./dss/ExponentialDecreaseAbstract.sol";
 
 // Sai
 import { GemPitAbstract } from "./sai/GemPitAbstract.sol";
