@@ -46,6 +46,7 @@ import { ChainlogHelper } from "./dss/ChainlogAbstract.sol";
 // Liq 2.0
 import { DogAbstract } from "./dss/DogAbstract.sol";
 import { ClipAbstract } from "./dss/ClipAbstract.sol";
+import { ClipperMomAbstract } from "./dss/ClipperMomAbstract.sol";
 import { LinearDecreaseAbstract } from "./dss/LinearDecreaseAbstract.sol";
 import {
     StairstepExponentialDecreaseAbstract
