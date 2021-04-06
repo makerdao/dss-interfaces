@@ -8,6 +8,7 @@ interface EndAbstract {
     function deny(address) external;
     function vat() external view returns (address);
     function cat() external view returns (address);
+    function dog() external view returns (address);
     function vow() external view returns (address);
     function pot() external view returns (address);
     function spot() external view returns (address);
@@ -28,6 +29,7 @@ interface EndAbstract {
     function cage() external;
     function cage(bytes32) external;
     function skip(bytes32, uint256) external;
+    function snip(bytes32, uint256) external;
     function skim(bytes32, address) external;
     function free(bytes32) external;
     function thaw() external;
