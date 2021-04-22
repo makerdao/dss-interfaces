@@ -8,6 +8,7 @@ interface LerpAbstract {
     function start() external view returns (uint256);
     function end() external view returns (uint256);
     function duration() external view returns (uint256);
+    function done() external view returns (bool);
+    function startTime() external view returns (uint256);
     function tick() external;
-    function wipe() external;
 }

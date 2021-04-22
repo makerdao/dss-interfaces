@@ -31,6 +31,8 @@ import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
 import { GetCdpsAbstract } from "./dss/GetCdpsAbstract.sol";
 import { IlkRegistryAbstract } from "./dss/IlkRegistryAbstract.sol";
 import { JugAbstract } from "./dss/JugAbstract.sol";
+import { LerpAbstract } from "./dss/LerpAbstract.sol";
+import { LerpFactoryAbstract } from "./dss/LerpFactoryAbstract.sol";
 import { LPOsmAbstract } from "./dss/LPOsmAbstract.sol";
 import { MkrAuthorityAbstract } from "./dss/MkrAuthorityAbstract.sol";
 import { MedianAbstract } from "./dss/MedianAbstract.sol";
@@ -52,5 +54,3 @@ import { SaiTubAbstract } from "./sai/SaiTubAbstract.sol";
 import { SaiVoxAbstract } from "./sai/SaiVoxAbstract.sol";
 
 import { PotHelper } from "./dss/PotHelper.sol";
-
-import { LerpAbstract } from "./utils/LerpAbstract.sol";
