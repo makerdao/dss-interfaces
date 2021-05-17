@@ -15,12 +15,12 @@ contract PotHelper {
     // https://github.com/makerdao/dss/blob/master/src/pot.sol#L79
     uint256 constant ONE = 10 ** 27;
 
-    function mul(uint x, uint y) internal pure returns (uint z) {
+    function _mul(uint x, uint y) internal pure returns (uint z) {
         require(y == 0 || (z = x * y) / y == x);
     }
 
-    function rmul(uint x, uint y) internal pure returns (uint z) {
-        z = mul(x, y) / ONE;
+    function _rmul(uint x, uint y) internal pure returns (uint z) {
+        z = _mul(x, y) / ONE;
     }
 
     function rpow(uint x, uint n, uint base) internal pure returns (uint z) {
@@ -49,8 +49,8 @@ contract PotHelper {
 
     // View function for calculating value of chi iff drip() is called in the same block.
     function drop() external view returns (uint256) {
-        if (now == pa.rho()) return pa.chi();
-        return rmul(rpow(pa.dsr(), now - pa.rho(), ONE), pa.chi());
+        if (block.timestamp == pa.rho()) return pa.chi();
+        return _rmul(rpow(pa.dsr(), block.timestamp - pa.rho(), ONE), pa.chi());
     }
 
     // Pass the Pot Abstract for additional operations
