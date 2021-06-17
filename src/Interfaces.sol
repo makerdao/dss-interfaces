@@ -24,6 +24,7 @@ import { ESMAbstract } from "./dss/ESMAbstract.sol";
 import { ETHJoinAbstract } from "./dss/ETHJoinAbstract.sol";
 import { FaucetAbstract } from "./dss/FaucetAbstract.sol";
 import { FlapAbstract } from "./dss/FlapAbstract.sol";
+import { FlashAbstract } from "./dss/FlashAbstract.sol";
 import { FlipAbstract } from "./dss/FlipAbstract.sol";
 import { FlipperMomAbstract } from "./dss/FlipperMomAbstract.sol";
 import { FlopAbstract } from "./dss/FlopAbstract.sol";
