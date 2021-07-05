@@ -15,12 +15,12 @@ contract PotHelper {
     // https://github.com/makerdao/dss/blob/master/src/pot.sol#L79
     uint256 constant ONE = 10 ** 27;
 
-    function mul(uint x, uint y) internal pure returns (uint z) {
+    function _mul(uint x, uint y) internal pure returns (uint z) {
         require(y == 0 || (z = x * y) / y == x);
     }
 
     function rmul(uint x, uint y) internal pure returns (uint z) {
-        z = mul(x, y) / ONE;
+        z = _mul(x, y) / ONE;
     }
 
     function rpow(uint x, uint n, uint base) internal pure returns (uint z) {
