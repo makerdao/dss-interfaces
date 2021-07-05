@@ -40,6 +40,7 @@ import { OsmMomAbstract } from "./dss/OsmMomAbstract.sol";
 import { PotAbstract } from "./dss/PotAbstract.sol";
 import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { VatAbstract } from "./dss/VatAbstract.sol";
+import { VestAbstract } from "./dss/VestAbstract.sol";
 import { VowAbstract } from "./dss/VowAbstract.sol";
 import { ChainlogAbstract } from "./dss/ChainlogAbstract.sol";
 import { ChainlogHelper } from "./dss/ChainlogAbstract.sol";
