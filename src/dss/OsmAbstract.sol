@@ -10,8 +10,6 @@ interface OsmAbstract {
     function src() external view returns (address);
     function hop() external view returns (uint16);
     function zzz() external view returns (uint64);
-    function cur() external view returns (uint128, uint128);
-    function nxt() external view returns (uint128, uint128);
     function bud(address) external view returns (uint256);
     function stop() external;
     function start() external;
