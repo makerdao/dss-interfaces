@@ -39,6 +39,8 @@ import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
 import { GetCdpsAbstract } from "./dss/GetCdpsAbstract.sol";
 import { IlkRegistryAbstract } from "./dss/IlkRegistryAbstract.sol";
 import { JugAbstract } from "./dss/JugAbstract.sol";
+import { LerpAbstract } from "./dss/LerpAbstract.sol";
+import { LerpFactoryAbstract } from "./dss/LerpFactoryAbstract.sol";
 import { LinearDecreaseAbstract } from "./dss/LinearDecreaseAbstract.sol";
 import { LPOsmAbstract } from "./dss/LPOsmAbstract.sol";
 import { MkrAuthorityAbstract } from "./dss/MkrAuthorityAbstract.sol";
