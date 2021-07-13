@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity >=0.5.12;
 
 // https://github.com/makerdao/osm
@@ -10,8 +10,6 @@ interface OsmAbstract {
     function src() external view returns (address);
     function hop() external view returns (uint16);
     function zzz() external view returns (uint64);
-    function cur() external view returns (uint128, uint128);
-    function nxt() external view returns (uint128, uint128);
     function bud(address) external view returns (uint256);
     function stop() external;
     function start() external;
