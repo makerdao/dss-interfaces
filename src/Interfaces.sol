@@ -36,6 +36,8 @@ import { FlipAbstract } from "./dss/FlipAbstract.sol";
 import { FlipperMomAbstract } from "./dss/FlipperMomAbstract.sol";
 import { FlopAbstract } from "./dss/FlopAbstract.sol";
 import { GemJoinAbstract } from "./dss/GemJoinAbstract.sol";
+import { GemJoinImplementationAbstract } from "./dss/GemJoinImplementationAbstract.sol";
+import { GemJoinManagedAbstract } from "./dss/GemJoinManagedAbstract.sol";
 import { GetCdpsAbstract } from "./dss/GetCdpsAbstract.sol";
 import { IlkRegistryAbstract } from "./dss/IlkRegistryAbstract.sol";
 import { JugAbstract } from "./dss/JugAbstract.sol";

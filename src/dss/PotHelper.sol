@@ -8,8 +8,8 @@ contract PotHelper {
 
     PotAbstract pa;
 
-    constructor(address pot) public {
-        pa = PotAbstract(pot);
+    constructor(address _pot) public {
+        pa = PotAbstract(_pot);
     }
 
     // https://github.com/makerdao/dss/blob/master/src/pot.sol#L79
