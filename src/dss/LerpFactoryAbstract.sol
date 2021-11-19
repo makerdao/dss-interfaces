@@ -7,7 +7,7 @@ interface LerpFactoryAbstract {
     function rely(address) external;
     function deny(address) external;
     function lerps(bytes32) external view returns (address);
-    function active(uint256) external view returns (address);
+    function active(uint256) external view returns (address[] memory);
     function newLerp(bytes32, address, bytes32, uint256, uint256, uint256, uint256) external view returns (address);
     function newIlkLerp(bytes32, address, bytes32, bytes32, uint256, uint256, uint256, uint256) external view returns (address);
     function tall() external;
