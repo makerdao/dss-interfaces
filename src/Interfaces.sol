@@ -14,6 +14,9 @@ import { DSThingAbstract } from "./dapp/DSThingAbstract.sol";
 import { DSTokenAbstract } from "./dapp/DSTokenAbstract.sol";
 import { DSValueAbstract } from "./dapp/DSValueAbstract.sol";
 
+// Partial DSS Abstracts
+import { WardsAbstract } from "./dss/WardsAbstract.sol";
+
 import { AuthGemJoinAbstract } from "./dss/AuthGemJoinAbstract.sol";
 import { CatAbstract } from "./dss/CatAbstract.sol";
 import { ChainlogAbstract } from "./dss/ChainlogAbstract.sol";
