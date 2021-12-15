@@ -3,7 +3,7 @@ pragma solidity >=0.5.12;
 
 // https://github.com/makerdao/dss-psm/src/psm.sol
 interface PsmAbstract {
-    function wards(address) external returns (uint256);
+    function wards(address) external view returns (uint256);
     function rely(address) external;
     function deny(address) external;
     function vat() external returns (address);
