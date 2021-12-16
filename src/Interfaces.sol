@@ -15,7 +15,7 @@ import { DSTokenAbstract } from "./dapp/DSTokenAbstract.sol";
 import { DSValueAbstract } from "./dapp/DSValueAbstract.sol";
 
 // Partial DSS Abstracts
-import { WardsAbstract } from "./dss/WardsAbstract.sol";
+import { WardsAbstract } from "./utils/WardsAbstract.sol";
 
 import { AuthGemJoinAbstract } from "./dss/AuthGemJoinAbstract.sol";
 import { CatAbstract } from "./dss/CatAbstract.sol";
