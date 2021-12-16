@@ -14,9 +14,6 @@ import { DSThingAbstract } from "./dapp/DSThingAbstract.sol";
 import { DSTokenAbstract } from "./dapp/DSTokenAbstract.sol";
 import { DSValueAbstract } from "./dapp/DSValueAbstract.sol";
 
-// Partial DSS Abstracts
-import { WardsAbstract } from "./utils/WardsAbstract.sol";
-
 import { AuthGemJoinAbstract } from "./dss/AuthGemJoinAbstract.sol";
 import { CatAbstract } from "./dss/CatAbstract.sol";
 import { ChainlogAbstract } from "./dss/ChainlogAbstract.sol";
@@ -66,3 +63,6 @@ import { SaiTapAbstract } from "./sai/SaiTapAbstract.sol";
 import { SaiTopAbstract } from "./sai/SaiTopAbstract.sol";
 import { SaiTubAbstract } from "./sai/SaiTubAbstract.sol";
 import { SaiVoxAbstract } from "./sai/SaiVoxAbstract.sol";
+
+// Partial DSS Abstracts
+import { WardsAbstract } from "./utils/WardsAbstract.sol";
