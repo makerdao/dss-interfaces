@@ -9,7 +9,7 @@ interface JugAbstract {
     function ilks(bytes32) external view returns (uint256, uint256);
     function vat() external view returns (address);
     function vow() external view returns (address);
-    function base() external view returns (address);
+    function base() external view returns (uint256);
     function init(bytes32) external;
     function file(bytes32, bytes32, uint256) external;
     function file(bytes32, uint256) external;
