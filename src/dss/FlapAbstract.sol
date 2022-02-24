@@ -14,6 +14,8 @@ interface FlapAbstract {
     function tau() external view returns (uint48);
     function kicks() external view returns (uint256);
     function live() external view returns (uint256);
+    function lid() external view returns (uint256);
+    function fill() external view returns (uint256);
     function file(bytes32, uint256) external;
     function kick(uint256, uint256) external returns (uint256);
     function tick(uint256) external;
