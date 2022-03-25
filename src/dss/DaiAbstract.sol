@@ -16,7 +16,7 @@ interface DaiAbstract {
     function nonces(address) external view returns (uint256);
     function DOMAIN_SEPARATOR() external view returns (bytes32);
     function PERMIT_TYPEHASH() external view returns (bytes32);
-    function transfer(address, uint256) external;
+    function transfer(address, uint256) external returns (bool);
     function transferFrom(address, address, uint256) external returns (bool);
     function mint(address, uint256) external;
     function burn(address, uint256) external;
