@@ -20,6 +20,7 @@ import { ChainlogAbstract } from "./dss/ChainlogAbstract.sol";
 import { ChainlogHelper } from "./dss/ChainlogAbstract.sol";
 import { ClipAbstract } from "./dss/ClipAbstract.sol";
 import { ClipperMomAbstract } from "./dss/ClipperMomAbstract.sol";
+import { CureAbstract } from "./dss/CureAbstract.sol";
 import { DaiAbstract } from "./dss/DaiAbstract.sol";
 import { DaiJoinAbstract } from "./dss/DaiJoinAbstract.sol";
 import { DogAbstract } from "./dss/DogAbstract.sol";
