@@ -12,6 +12,7 @@ interface EndAbstract {
     function vow() external view returns (address);
     function pot() external view returns (address);
     function spot() external view returns (address);
+    function cure() external view returns (address);
     function live() external view returns (uint256);
     function when() external view returns (uint256);
     function wait() external view returns (uint256);
