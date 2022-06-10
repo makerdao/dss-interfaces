@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity >=0.5.12;
 
-import { PotAbstract } from "./PotAbstract.sol";
+import { PotAbstract } from "../dss/PotAbstract.sol";
 
 // https://github.com/makerdao/dss/blob/master/src/pot.sol
 contract PotHelper {
