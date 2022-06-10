@@ -12,6 +12,7 @@ interface EndAbstract {
     function vow() external view returns (address);
     function pot() external view returns (address);
     function spot() external view returns (address);
+    function cure() external view returns (address);
     function live() external view returns (uint256);
     function when() external view returns (uint256);
     function wait() external view returns (uint256);
@@ -22,8 +23,6 @@ interface EndAbstract {
     function fix(bytes32) external view returns (uint256);
     function bag(address) external view returns (uint256);
     function out(bytes32, address) external view returns (uint256);
-    function WAD() external view returns (uint256);
-    function RAY() external view returns (uint256);
     function file(bytes32, address) external;
     function file(bytes32, uint256) external;
     function cage() external;
