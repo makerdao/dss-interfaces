@@ -1,21 +1,15 @@
 Provides programmatic interfaces for the Dai Stablecoin System core contracts.
 
-Import all DSS abstract contracts
-
-```solidity
-import "dss-interfaces/Interfaces.sol";
-```
-
-Import multiple contracts
-
-```solidity
-import { DSAuthorityAbstract, DSAuthAbstract } from "dss-interfaces/dapp/DSAuthorityAbstract.sol";
-```
-
 Import individual contracts
 
 ```solidity
 import { VatAbstract } from "dss-interfaces/dss/VatAbstract.sol";
+```
+
+Import all DSS abstract contracts (best used in tests)
+
+```solidity
+import "dss-interfaces/Interfaces.sol";
 ```
 
 
