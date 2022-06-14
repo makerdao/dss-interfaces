@@ -51,7 +51,6 @@ import { MedianAbstract } from "./dss/MedianAbstract.sol";
 import { OsmAbstract } from "./dss/OsmAbstract.sol";
 import { OsmMomAbstract } from "./dss/OsmMomAbstract.sol";
 import { PotAbstract } from "./dss/PotAbstract.sol";
-import { PotHelper } from "./utils/PotHelper.sol";
 import { PsmAbstract } from "./dss/PsmAbstract.sol";
 import { SpotAbstract } from "./dss/SpotAbstract.sol";
 import { StairstepExponentialDecreaseAbstract } from "./dss/StairstepExponentialDecreaseAbstract.sol";
