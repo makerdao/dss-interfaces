@@ -1,31 +1,26 @@
 Provides programmatic interfaces for the Dai Stablecoin System core contracts.
 
-Import all DSS abstract contracts
-
-```
-import "dss-interfaces/Interfaces.sol";
-```
-
-Import multiple contracts
-
-```
-import { VatAbstract, VowAbstract } from "dss-interfaces/Interfaces.sol";
-```
-
 Import individual contracts
 
+```solidity
+import { VatAbstract } from "dss-interfaces/dss/VatAbstract.sol";
 ```
-import "lib/dss-interfaces/src/dss/VatAbstract.sol";
+
+Import all DSS abstract contracts (best used in tests)
+
+```solidity
+import "dss-interfaces/Interfaces.sol";
 ```
 
 
 ## Example Usage
 
 
-```
-import { VatAbstract } from "./Interfaces.sol";
-
+```solidity
+// SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity >=0.5.12;
+
+import { VatAbstract } from "dss-interfaces/dss/VatAbstract.sol";
 
 contract Testerface {
 
@@ -44,7 +39,8 @@ contract Testerface {
 ## Package Update
 
 Update the `version` field in `package.json` and from the command line run:
-```
+
+```bash
 > npm login
 > npm publish
 ```
