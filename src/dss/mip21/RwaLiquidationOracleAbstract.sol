@@ -15,6 +15,6 @@ interface RwaLiquidationOracleAbstract {
     function bump(bytes32, uint256) external;
     function tell(bytes32) external;
     function cure(bytes32) external;
-    function cull(bytes32) external;
+    function cull(bytes32, address) external;
     function good(bytes32) external view returns (bool);
 }
