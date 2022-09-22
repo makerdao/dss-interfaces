@@ -18,12 +18,12 @@ interface RwaOutputConduitBaseAbstract {
     function push() external;
 }
 
-// https://github.com/clio-finance/mip21-toolkit/blob/master/src/conduits/RwaOutputConduit.sol
+// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaOutputConduit.sol
 interface RwaOutputConduitAbstract is RwaOutputConduitBaseAbstract {
     function gov() external view returns (address);
 }
 
-// https://github.com/clio-finance/mip21-toolkit/blob/master/src/conduits/RwaOutputConduit2.sol
+// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaOutputConduit2.sol
 interface RwaOutputConduit2Abstract is RwaOutputConduitBaseAbstract {
     function may(address) external view returns (uint256);
     function mate(address) external;

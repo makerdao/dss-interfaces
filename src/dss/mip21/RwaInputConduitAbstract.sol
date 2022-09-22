@@ -8,12 +8,12 @@ interface RwaInputConduitBaseAbstract {
     function push() external;
 }
 
-// https://github.com/clio-finance/mip21-toolkit/blob/master/src/conduits/RwaInputConduit.sol
+// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaInputConduit.sol
 interface RwaInputConduitAbstract is RwaInputConduitBaseAbstract {
     function gov() external view returns (address);
 }
 
-// https://github.com/clio-finance/mip21-toolkit/blob/master/src/conduits/RwaInputConduit2.sol
+// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaInputConduit2.sol
 interface RwaInputConduit2Abstract is RwaInputConduitBaseAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;

@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity >=0.5.12;
 
-// https://github.com/clio-finance/mip21-toolkit/blob/master/src/jars/RwaJar.sol
+// https://github.com/makerdao/mip21-toolkit/blob/master/src/jars/RwaJar.sol
 interface RwaJarAbstract {
     function daiJoin() external view returns(address);
     function dai() external view returns(address);
