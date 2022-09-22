@@ -4,10 +4,6 @@ pragma solidity >=0.5.12;
 
 // https://github.com/makerdao/mip21-toolkit/blob/master/src/tokens/RwaTokenFactory.sol
 interface RwaTokenFactoryAbstract {
-    function createRwaToken(
-        string calldata name,
-        string calldata symbol,
-        address recipient
-    ) external returns (address);
+    function createRwaToken(string calldata, string calldata, address) external returns (address);
 }
 
