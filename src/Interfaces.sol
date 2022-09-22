@@ -59,10 +59,20 @@ import { VestAbstract } from "./dss/VestAbstract.sol";
 import { VowAbstract } from "./dss/VowAbstract.sol";
 
 // MIP21 Abstracts
-import { RwaInputConduitBaseAbstract, RwaInputConduitAbstract, RwaInputConduit2Abstract } from "./dss/mip21/RwaInputConduitAbstract.sol";
+import {
+  RwaInputConduitBaseAbstract,
+  RwaInputConduitAbstract,
+  RwaInputConduit2Abstract,
+  RwaInputConduit3Abstract
+} from "./dss/mip21/RwaInputConduitAbstract.sol";
 import { RwaJarAbstract } from "./dss/mip21/RwaJarAbstract.sol";
 import { RwaLiquidationOracleAbstract } from "./dss/mip21/RwaLiquidationOracleAbstract.sol";
-import { RwaOutputConduitBaseAbstract, RwaOutputConduitAbstract, RwaOutputConduit2Abstract } from "./dss/mip21/RwaOutputConduitAbstract.sol";
+import {
+  RwaOutputConduitBaseAbstract,
+  RwaOutputConduitAbstract,
+  RwaOutputConduit2Abstract,
+  RwaOutputConduit3Abstract
+} from "./dss/mip21/RwaOutputConduitAbstract.sol";
 import { RwaUrnAbstract } from "./dss/mip21/RwaUrnAbstract.sol";
 
 import { GemPitAbstract } from "./sai/GemPitAbstract.sol";
