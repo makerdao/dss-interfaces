@@ -2,8 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity >=0.5.12;
 
-// https://github.com/makerdao/mip21-toolkit/blob/master/src/urns/RwaUrn.sol
-// https://github.com/makerdao/mip21-toolkit/blob/master/src/urns/RwaUrn2.sol
+// https://github.com/makerdao/rwa-toolkit/blob/master/src/urns/RwaUrn.sol
 interface RwaUrnAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;
@@ -23,3 +22,6 @@ interface RwaUrnAbstract {
     function free(uint256) external;
     function quit() external;
 }
+
+// https://github.com/makerdao/rwa-toolkit/blob/master/src/urns/RwaUrn2.sol
+interface RwaUrn2Abstract is RwaUrnAbstract {}
