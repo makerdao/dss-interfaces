@@ -58,22 +58,23 @@ import { VatAbstract } from "./dss/VatAbstract.sol";
 import { VestAbstract } from "./dss/VestAbstract.sol";
 import { VowAbstract } from "./dss/VowAbstract.sol";
 
-// MIP21 Abstracts
+// RWA Abstracts
 import {
   RwaInputConduitBaseAbstract,
   RwaInputConduitAbstract,
   RwaInputConduit2Abstract,
-  RwaInputConduit3Abstract
-} from "./dss/mip21/RwaInputConduitAbstract.sol";
-import { RwaJarAbstract } from "./dss/mip21/RwaJarAbstract.sol";
-import { RwaLiquidationOracleAbstract } from "./dss/mip21/RwaLiquidationOracleAbstract.sol";
+  RwaSwapInputConduitAbstract
+  RwaSwapInputConduit2Abstract
+} from "./dss/rwa/RwaInputConduitAbstract.sol";
+import { RwaJarAbstract } from "./dss/rwa/RwaJarAbstract.sol";
+import { RwaLiquidationOracleAbstract } from "./dss/rwa/RwaLiquidationOracleAbstract.sol";
 import {
   RwaOutputConduitBaseAbstract,
   RwaOutputConduitAbstract,
   RwaOutputConduit2Abstract,
-  RwaOutputConduit3Abstract
-} from "./dss/mip21/RwaOutputConduitAbstract.sol";
-import { RwaUrnAbstract } from "./dss/mip21/RwaUrnAbstract.sol";
+  RwaSwapOutputConduitAbstract
+} from "./dss/rwa/RwaOutputConduitAbstract.sol";
+import { RwaUrnAbstract, RwaUrn2Abstract } from "./dss/rwa/RwaUrnAbstract.sol";
 
 import { GemPitAbstract } from "./sai/GemPitAbstract.sol";
 import { SaiMomAbstract } from "./sai/SaiMomAbstract.sol";

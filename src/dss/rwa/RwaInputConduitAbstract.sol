@@ -8,12 +8,12 @@ interface RwaInputConduitBaseAbstract {
     function push() external;
 }
 
-// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaInputConduit.sol
+// https://github.com/makerdao/rwa-toolkit/blob/master/src/conduits/RwaInputConduit.sol
 interface RwaInputConduitAbstract is RwaInputConduitBaseAbstract {
     function gov() external view returns (address);
 }
 
-// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaInputConduit2.sol
+// https://github.com/makerdao/rwa-toolkit/blob/master/src/conduits/RwaInputConduit2.sol
 interface RwaInputConduit2Abstract is RwaInputConduitBaseAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;
@@ -23,8 +23,8 @@ interface RwaInputConduit2Abstract is RwaInputConduitBaseAbstract {
     function hate(address) external;
 }
 
-// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaInputConduit3.sol
-interface RwaInputConduit3Abstract is RwaInputConduitBaseAbstract {
+// https://github.com/makerdao/rwa-toolkit/blob/master/src/conduits/RwaSwapInputConduit.sol
+interface RwaSwapInputConduitAbstract is RwaInputConduitBaseAbstract {
     function wards(address) external view returns (uint256);
     function rely(address) external;
     function deny(address) external;
@@ -42,3 +42,6 @@ interface RwaInputConduit3Abstract is RwaInputConduitBaseAbstract {
     function expectedDaiWad(uint256) external view returns (uint256);
     function requiredGemAmt(uint256) external view returns (uint256);
 }
+
+// https://github.com/makerdao/rwa-toolkit/blob/master/src/conduits/RwaSwapInputConduit2.sol
+interface RwaSwapInputConduit2Abstract is RwaSwapInputConduitAbstract {}

@@ -15,7 +15,7 @@ interface RwaOutputConduitBaseAbstract {
     function push() external;
 }
 
-// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaOutputConduit.sol
+// https://github.com/makerdao/rwa-toolkit/blob/master/src/conduits/RwaOutputConduit.sol
 interface RwaOutputConduitAbstract is RwaOutputConduitBaseAbstract {
     function gov() external view returns (address);
     function bud(address) external view returns (uint256);
@@ -23,15 +23,15 @@ interface RwaOutputConduitAbstract is RwaOutputConduitBaseAbstract {
     function diss(address) external;
 }
 
-// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaOutputConduit2.sol
+// https://github.com/makerdao/rwa-toolkit/blob/master/src/conduits/RwaOutputConduit2.sol
 interface RwaOutputConduit2Abstract is RwaOutputConduitBaseAbstract {
     function may(address) external view returns (uint256);
     function mate(address) external;
     function hate(address) external;
 }
 
-// https://github.com/makerdao/mip21-toolkit/blob/master/src/conduits/RwaOutputConduit3.sol
-interface RwaOutputConduit3Abstract is RwaOutputConduitBaseAbstract {
+// https://github.com/makerdao/rwa-toolkit/blob/master/src/conduits/RwaSwapOutputConduit.sol
+interface RwaSwapOutputConduitAbstract is RwaOutputConduitBaseAbstract {
     function bud(address) external view returns (uint256);
     function kiss(address) external;
     function diss(address) external;
