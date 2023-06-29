@@ -63,7 +63,7 @@ import {
   RwaInputConduitBaseAbstract,
   RwaInputConduitAbstract,
   RwaInputConduit2Abstract,
-  RwaSwapInputConduitAbstract
+  RwaSwapInputConduitAbstract,
   RwaSwapInputConduit2Abstract
 } from "./dss/rwa/RwaInputConduitAbstract.sol";
 import { RwaJarAbstract } from "./dss/rwa/RwaJarAbstract.sol";
